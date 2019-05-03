@@ -3,14 +3,24 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AicuraLogoComponent } from './aicura-logo/aicura-logo.component';
+import { AicuraLogoOrangeComponent } from './aicura-logo-orange/aicura-logo-orange.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { MeetTheTeamComponent } from './meet-the-team/meet-the-team.component';
+import { AicuraLogoWhiteComponent } from './aicura-logo-white/aicura-logo-white.component';
+import { InsightsComponent } from './insights/insights.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AicuraLogoComponent,
-    FooterComponent
+    AicuraLogoOrangeComponent,
+    FooterComponent,
+    HomePageComponent,
+    MeetTheTeamComponent,
+    AicuraLogoWhiteComponent,
+    InsightsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
