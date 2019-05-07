@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
   linkedInLogoUrl = 'assets/img/linkedin-logo.png';
   youtubeLogoUrl = 'assets/img/youtube-logo.png';
+  facebookLogoUrl = 'assets/img/facebook-logo.png';
 
   constructor() { }
 
