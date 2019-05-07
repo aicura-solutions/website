@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
+  imageUrl = 'assets/img/aicura-rocket-medium.png';
 
   constructor() { }
 
