@@ -3,5 +3,15 @@
   left: 2%;
   top: 2%;
   width: 133.093295px;
-  height: 40.48877px;
+  height: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+  #aicura-logo {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+  }
 }
