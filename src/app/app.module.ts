@@ -10,6 +10,8 @@ import { MeetTheTeamComponent } from './meet-the-team/meet-the-team.component';
 import { AicuraLogoWhiteComponent } from './aicura-logo-white/aicura-logo-white.component';
 import { InsightsComponent } from './insights/insights.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ContactComponent } from './contact/contact.component';
+import { PoliciesComponent } from './policies/policies.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     MeetTheTeamComponent,
     AicuraLogoWhiteComponent,
     InsightsComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ContactComponent,
+    PoliciesComponent
   ],
   imports: [
     BrowserModule,
