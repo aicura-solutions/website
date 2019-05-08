@@ -10,6 +10,7 @@ export class HomePageComponent implements OnInit {
   meetTheTeamUrl = '/meet-the-team';
   communityProjectsUrl = '/community-projects';
   seeAllPostsUrl = '/insights';
+  contactUrl = '/contact';
 
   constructor() { }
 
