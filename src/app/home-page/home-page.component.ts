@@ -6,7 +6,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css']
 })
 export class HomePageComponent implements OnInit {
-  imageUrl = 'assets/img/aicura-rocket-medium.png';
+  // images
+  rocketUrl = 'assets/img/aicura-rocket-medium.png';
+  soldiersUrl = 'assets/img/soldiers.png';
+  boxesUrl = 'assets/img/boxes.png';
+  rubixUrl = 'assets/img/rubix-cube.png';
+  duckUrl = 'assets/img/aicura-duck.png';
+  pigUrl = 'assets/img/aicura-pig.png';
+
+  barclaysUrl = 'assets/img/brands/barclays-logo.svg';
+  capcoUrl = 'assets/img/brands/capco-logo.svg';
+  capgeminiUrl = 'assets/img/brands/capgemini-logo.svg';
+  deutscheUrl = 'assets/img/brands/deutsche-bank-logo.svg';
+  jlUrl = 'assets/img/brands/john-lewis-logo.svg';
+  natwestUrl = 'assets/img/brands/natwest-logo.svg';
+  tsbUrl = 'assets/img/brands/tsb-logo.svg';
+  wongaUrl = 'assets/img/brands/wonga-logo.svg';
+
   meetTheTeamUrl = '/meet-the-team';
   communityProjectsUrl = '/community-projects';
   seeAllPostsUrl = '/insights';
