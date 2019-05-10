@@ -20,6 +20,11 @@
 
   .div__footer {
     color: white;
+    width: 100%;
+  }
+
+  .div__footer > p {
+    margin: 10px;
   }
 
   .div__links {
