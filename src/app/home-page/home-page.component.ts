@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home-page',
@@ -36,6 +37,20 @@ export class HomePageComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $('.button__watch-video').on('click', e => {
+      e.preventDefault();
+      $('.video-container').addClass('show');
+    });
+
+    $('.video-container').on('click', e => {
+      e.preventDefault();
+      e.stopPropagation();
+      $('.video-container').removeClass('show');
+    });
+
+    $('iframe').on('click', e => {
+      e.stopPropagation();
+    });
   }
 
 }

@@ -1,7 +1,31 @@
-#aicura-logo {
-  position: absolute;
-  left: 2%;
-  top: 2%;
-  width: 133.093295px;
-  height: 40.48877px;
+@media only screen and (max-width: 576px) {
+  #aicura-logo {
+    position: absolute;
+    left: 5%;
+    top: 2%;
+    width: 40%;
+    height: auto;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) {
+  #aicura-logo {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 266px;
+    height: 60px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #aicura-logo {
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    width: 133.093295px;
+    height: 30px;
+  }
 }

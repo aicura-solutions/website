@@ -11,14 +11,17 @@
 
   <div class="grid-container-sub-2">
     <div class="grid-item-3">
-      <p>Contact form placeholder</p>
-    </div>
-    <div class="grid-item-4">
-      <p>Level 39</p>
-      <p>Canary Wharf</p>
-      <p>London</p>
-      <p>E14 5AB</p>
-      <div class="contact-map"></div>
+      <form class="contact-form" action="#">
+        <p>Name</p>
+        <input type="text" name="name">
+        <p>Email</p>
+        <input type="email" name="email">
+        <p>Your message</p>
+        <textarea name="message" rows="4"></textarea>
+        <input type="submit" class="button__orange-gradient" value="Submit">
+      </form>
     </div>
   </div>
+
+  <app-footer></app-footer>
 </div>

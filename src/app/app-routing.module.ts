@@ -20,6 +20,9 @@ const routes: Routes = [
   { path: 'community-projects', component: ComingSoonComponent },
   { path: 'open-source-banking', component: OpenSourceBankingComponent },
   { path: 'front-end-testing-automation', component: FrontEndAutomationComponent },
+  { path: 'services', component: ComingSoonComponent },
+  { path: 'about', component: ComingSoonComponent },
+  { path: 'our-team', component: ComingSoonComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
