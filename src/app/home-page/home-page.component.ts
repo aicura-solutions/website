@@ -13,6 +13,9 @@ export class HomePageComponent implements OnInit {
   rubixUrl = 'assets/img/rubix-cube.png';
   duckUrl = 'assets/img/aicura-duck.png';
   pigUrl = 'assets/img/aicura-pig.png';
+  buildUrl = 'assets/img/build.png';
+  innovateUrl = 'assets/img/innovate.png';
+  runUrl = 'assets/img/run.png';
 
   barclaysUrl = 'assets/img/brands/barclays-logo.svg';
   capcoUrl = 'assets/img/brands/capco-logo.svg';

@@ -145,16 +145,35 @@
     text-align: center;
   }
 
+  .image--innovate {
+    height: 80px;
+    width: auto;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
   .grid-item-orange-clouds-card-2 {
     grid-column: 1;
     grid-row: 4;
     text-align: center;
   }
 
+  .image--build {
+    height: 55px;
+    width: auto;
+    margin-top: 48px;
+  }
+
   .grid-item-orange-clouds-card-3 {
     grid-column: 1;
     grid-row: 5;
     text-align: center;
+  }
+
+  .image--run {
+    height: 100px;
+    width: auto;
+    margin-top: 30px;
   }
 
   .grid-container-white-info {
@@ -204,10 +223,10 @@
 
   .grid-container-blue-info {
     display: grid;
-    height: 900px;
+    height: 800px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 30% 35% 35%;
     background: #1499d6;
     background: -moz-linear-gradient;
     background: -moz-linear-gradient(120deg, #5fc2f0 0%, #1499d6 100%);
@@ -224,7 +243,6 @@
     grid-column: 1;
     grid-row: 1;
     text-align: center;
-    margin-left: 40px;
   }
 
   .image--rubix {
@@ -237,6 +255,10 @@
     grid-column: 1;
     grid-row: 2;
     text-align: center;
+  }
+
+  .grid-item-blue-info-1 > h1 {
+    margin-top: 0;
   }
 
   .grid-item-blue-info-2 {
@@ -325,6 +347,11 @@
     grid-column: 1;
     grid-row: 7;
     text-align: center;
+  }
+
+  .image--duck {
+    height: 200px;
+    width: auto;
   }
 
   /* gradients */
@@ -549,16 +576,35 @@
     text-align: center;
   }
 
+  .image--innovate {
+    height: 80px;
+    width: auto;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
   .grid-item-orange-clouds-card-2 {
     grid-column: 1;
     grid-row: 4;
     text-align: center;
   }
 
+  .image--build {
+    height: 55px;
+    width: auto;
+    margin-top: 48px;
+  }
+
   .grid-item-orange-clouds-card-3 {
     grid-column: 1;
     grid-row: 5;
     text-align: center;
+  }
+
+  .image--run {
+    height: 100px;
+    width: auto;
+    margin-top: 30px;
   }
 
   .grid-container-white-info {
@@ -630,7 +676,12 @@
     grid-column: 1;
     grid-row: 1;
     text-align: center;
-    margin-left: 40px;
+  }
+
+  .image--rubix {
+    height: 300px;
+    width: auto;
+    margin-top: 20px;
   }
 
   .grid-item-blue-info-1 {
@@ -645,13 +696,6 @@
     grid-row: 3;
     text-align: center;
     padding: 0 30px;
-  }
-
-  .image--rubix {
-    height: 300px;
-    width: auto;
-    margin-left: 20px;
-    margin-top: 20px;
   }
 
   .grid-container-grey-community {
@@ -736,6 +780,11 @@
     grid-column: 1;
     grid-row: 7;
     text-align: center;
+  }
+
+  .image--duck {
+    height: 200px;
+    width: auto;
   }
 
   /* gradients */
@@ -959,16 +1008,36 @@
     text-align: center;
   }
 
+  .image--innovate {
+    height: 80px;
+    width: auto;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
   .grid-item-orange-clouds-card-2 {
     grid-column: 4 / 6;
     grid-row: 2;
     text-align: center;
   }
 
+  .image--build {
+    height: 55px;
+    width: auto;
+    margin-top: 48px;
+  }
+
   .grid-item-orange-clouds-card-3 {
     grid-column: 6 / 8;
     grid-row: 2;
     text-align: center;
+  }
+
+  .image--run {
+    height: 100px;
+    width: auto;
+    margin-top: 30px;
+    margin-right: 10px;
   }
 
   .grid-container-white-info {
@@ -1004,7 +1073,7 @@
   }
 
   .image--boxes {
-    height: 330px;
+    height: 200px;
     width: auto;
     margin-top: 20px;
   }
@@ -1054,12 +1123,14 @@
     grid-row: 1;
     text-align: center;
     padding: 0;
+    margin-left: 0;
   }
 
   .image--rubix {
     height: 270px;
     width: auto;
     margin-top: 50px;
+    margin-left: 0;
   }
 
   .grid-container-grey-community {
@@ -1147,8 +1218,14 @@
     text-align: center;
   }
 
+  .image--duck {
+    height: 200px;
+    width: auto;
+    margin-top: 50px;
+  }
+
   .button__orange-gradient {
-    width: 70%;
+    width: 100%;
     font-size: 1rem;
     color: #ffffff;
     text-align: center;
@@ -1388,10 +1465,23 @@
     text-align: center;
   }
 
+  .image--innovate {
+    height: 80px;
+    width: auto;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
   .grid-item-orange-clouds-card-2 {
     grid-column: 4 / 6;
     grid-row: 2;
     text-align: center;
+  }
+
+  .image--build {
+    height: 55px;
+    width: auto;
+    margin-top: 48px;
   }
 
   .grid-item-orange-clouds-card-3 {
@@ -1400,9 +1490,16 @@
     text-align: center;
   }
 
+  .image--run {
+    height: 100px;
+    width: auto;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
   .grid-container-white-info {
     display: grid;
-    height: 700px;
+    height: 630px;
     grid-template-columns: auto 400px 400px auto;
     grid-template-rows: 300px 300px;
     background-color: white;
@@ -1473,6 +1570,7 @@
     grid-row: 1;
     text-align: center;
     padding: 0;
+    margin-left: 0;
   }
 
   .image--rubix {
@@ -1559,7 +1657,14 @@
     text-align: center;
   }
 
+  .image--duck {
+    height: 200px;
+    width: auto;
+    margin-top: 0;
+  }
+
   .button__orange-gradient {
+    width: 70%;
     font-size: 1rem;
     color: #ffffff;
     text-align: center;
@@ -1737,9 +1842,9 @@
 
   .grid-container-orange-clouds {
     display: grid;
-    height: 480px;
+    height: 530px;
     grid-template-columns: auto 190px 190px 190px 190px 190px 190px auto;
-    grid-template-rows: 200px 250px;
+    grid-template-rows: 200px 250px 50px;
     background: #ff6633;
     background: -moz-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
     background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ff6633), color-stop(100%, #ff8400));
@@ -1768,16 +1873,41 @@
     text-align: center;
   }
 
+  .image--innovate {
+    height: 80px;
+    width: auto;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
   .grid-item-orange-clouds-card-2 {
     grid-column: 4 / 6;
     grid-row: 2;
     text-align: center;
   }
 
+  .image--build {
+    height: 55px;
+    width: auto;
+    margin-top: 48px;
+  }
+
   .grid-item-orange-clouds-card-3 {
     grid-column: 6 / 8;
     grid-row: 2;
     text-align: center;
+  }
+
+  .image--run {
+    height: 100px;
+    width: auto;
+    margin-top: 30px;
+    margin-right: 10px;
+  }
+
+  .grid-item-orange-clouds-3 {
+    grid-column: 2 / 4;
+    grid-row: 3;
   }
 
   .grid-container-white-info {
@@ -1806,7 +1936,7 @@
   }
 
   .image--boxes {
-    height: 350px;
+    height: 300px;
     width: auto;
     margin-top: 20px;
     margin-right: 30px;
@@ -1942,6 +2072,11 @@
     grid-column: 6 / 8;
     grid-row: 4;
     text-align: center;
+  }
+
+  .image--duck {
+    height: 200px;
+    width: auto;
   }
 
   .button__orange-gradient {

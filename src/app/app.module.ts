@@ -12,6 +12,7 @@ import { InsightsComponent } from './insights/insights.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
 import { PoliciesComponent } from './policies/policies.component';
+import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PoliciesComponent } from './policies/policies.component';
     InsightsComponent,
     PageNotFoundComponent,
     ContactComponent,
-    PoliciesComponent
+    PoliciesComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,
