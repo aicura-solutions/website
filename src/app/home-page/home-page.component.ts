@@ -30,6 +30,8 @@ export class HomePageComponent implements OnInit {
   communityProjectsUrl = '/community-projects';
   seeAllPostsUrl = '/insights';
   contactUrl = '/contact';
+  osBankingUrl = '/open-source-banking';
+  frontendAutomationUrl = '/front-end-testing-automation';
 
   constructor() { }
 

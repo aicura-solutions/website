@@ -13,6 +13,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ContactComponent } from './contact/contact.component';
 import { PoliciesComponent } from './policies/policies.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
+import { BlogDetailComponent } from './blog-detail/blog-detail.component';
+import { OpenSourceHackathonComponent } from './open-source-hackathon/open-source-hackathon.component';
+import { OpenSourceBankingComponent } from './open-source-banking/open-source-banking.component';
+import { FrontEndAutomationComponent } from './front-end-automation/front-end-automation.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { ComingSoonComponent } from './coming-soon/coming-soon.component';
     PageNotFoundComponent,
     ContactComponent,
     PoliciesComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    BlogDetailComponent,
+    OpenSourceHackathonComponent,
+    OpenSourceBankingComponent,
+    FrontEndAutomationComponent
   ],
   imports: [
     BrowserModule,
