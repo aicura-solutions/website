@@ -31,7 +31,7 @@
     color: #fff;
     height: 550px;
     padding-left: 20px;
-    margin-top: 150px;
+    margin-top: 100px;
     z-index: 1;
   }
   .grid-item-hero>h1 {
@@ -48,7 +48,7 @@
     color: #ffffff;
     text-align: center;
     text-decoration: none;
-    padding: 8px 30px;
+    padding: 8px 20px;
     border-radius: 16px;
     border: 2px #ff6633 solid;
   }
@@ -57,7 +57,7 @@
     grid-row: 1;
   }
   .image--rocket {
-    width: 80%;
+    width: 70%;
     height: auto;
     transform: rotate(10deg);
     z-index: 0;
@@ -65,7 +65,7 @@
     position: relative;
     left: -25%;
     bottom: 0;
-    margin-top: 50px;
+    margin-top: 30px;
   }
   @keyframes RocketAnimation {
     0%, 100% {
@@ -97,6 +97,7 @@
     color: #53606b;
     z-index: 2;
     text-align: center;
+    font-size: 1.5rem;
   }
   .grid-container-orange-clouds {
     display: grid;
@@ -518,17 +519,18 @@
     top: -90px;
   }
   .cloud1 {
-    bottom: 100px;
-    left: -8%;
+    bottom: 140px;
+    left: -30%;
   }
   .cloud2 {
-    bottom: 70px;
-    left: 10%;
-    transform: rotate(20deg);
+    bottom: 130px;
+    left: -10%;
+    transform: rotate(10deg);
   }
   .cloud3 {
-    bottom: 30px;
-    left: 30%;
+    bottom: 140px;
+    left: 20%;
+    transform: rotate(-30deg);
   }
   .cloud4 {
     bottom: 60px;
@@ -536,8 +538,8 @@
     transform: rotate(-10deg);
   }
   .cloud5 {
-    bottom: 250px;
-    left: -30%;
+    bottom: 220px;
+    left: -60%;
     transform: rotate(90deg);
   }
   .cloud6 {
@@ -1107,7 +1109,7 @@
     transform: rotate(90deg);
   }
   .cloud6 {
-    bottom: 40px;
+    bottom: 70px;
     left: 72%;
   }
   .cloud7 {
@@ -1600,7 +1602,8 @@
     height: 100px;
     margin: auto;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    left: 0;
     width: 100%;
   }
   .slider::before, .slider::after {
@@ -1670,20 +1673,20 @@
     top: -90px;
   }
   .cloud1 {
-    bottom: 100px;
+    bottom: 250px;
     left: -8%;
   }
   .cloud2 {
-    bottom: 70px;
+    bottom: 120px;
     left: 10%;
     transform: rotate(20deg);
   }
   .cloud3 {
-    bottom: 30px;
+    bottom: 80px;
     left: 30%;
   }
   .cloud4 {
-    bottom: 60px;
+    bottom: 110px;
     left: 50%;
     transform: rotate(-10deg);
   }
@@ -1693,20 +1696,20 @@
     transform: rotate(90deg);
   }
   .cloud6 {
-    bottom: 40px;
+    bottom: 100px;
     left: 72%;
   }
   .cloud7 {
-    bottom: 60px;
+    bottom: 90px;
     left: 90%;
   }
   .cloud8 {
-    bottom: 20px;
+    bottom: 70px;
     left: 100%;
     display: unset;
   }
   .cloud9 {
-    bottom: 40px;
+    bottom: 100px;
     left: 120%;
     display: unset;
   }
@@ -2076,7 +2079,8 @@
     height: 100px;
     margin: auto;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    left: 0;
     width: 100%;
   }
   .slider::before, .slider::after {
@@ -2235,16 +2239,16 @@
     top: -90px;
   }
   .cloud1 {
-    bottom: 100px;
+    bottom: 180px;
     left: -8%;
   }
   .cloud2 {
-    bottom: 70px;
+    bottom: 100px;
     left: 10%;
     transform: rotate(20deg);
   }
   .cloud3 {
-    bottom: 30px;
+    bottom: 90px;
     left: 30%;
   }
   .cloud4 {
@@ -2254,11 +2258,11 @@
   }
   .cloud5 {
     bottom: 250px;
-    left: -23%;
+    left: -20%;
     transform: rotate(90deg);
   }
   .cloud6 {
-    bottom: 40px;
+    bottom: 100px;
     left: 72%;
   }
   .cloud7 {
@@ -2266,15 +2270,15 @@
     left: 90%;
   }
   .cloud8 {
-    bottom: 20px;
+    bottom: 100px;
     left: 100%;
   }
   .cloud9 {
-    bottom: 40px;
+    bottom: 110px;
     left: 120%;
   }
   .cloud10 {
-    bottom: 170px;
+    bottom: 200px;
     left: 140%;
   }
 }
@@ -2758,46 +2762,47 @@
     top: -90px;
   }
   .cloud1 {
-    bottom: 100px;
+    bottom: 110px;
     left: -8%;
   }
   .cloud2 {
-    bottom: 70px;
+    bottom: 80px;
     left: 10%;
     transform: rotate(20deg);
   }
   .cloud3 {
-    bottom: 30px;
+    bottom: 80px;
     left: 30%;
   }
   .cloud4 {
-    bottom: 60px;
+    bottom: 100px;
     left: 50%;
     transform: rotate(-10deg);
   }
   .cloud5 {
-    bottom: 250px;
+    bottom: 260px;
     left: -23%;
     transform: rotate(90deg);
   }
   .cloud6 {
-    bottom: 40px;
-    left: 72%;
+    bottom: 100px;
+    left: 67%;
   }
   .cloud7 {
-    bottom: 60px;
+    bottom: 100px;
     left: 90%;
+    transform: rotate(20deg);
   }
   .cloud8 {
-    bottom: 20px;
+    bottom: 70px;
     left: 100%;
   }
   .cloud9 {
-    bottom: 40px;
+    bottom: 100px;
     left: 120%;
   }
   .cloud10 {
-    bottom: 170px;
+    bottom: 180px;
     left: 140%;
   }
 }

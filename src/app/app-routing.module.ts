@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: '', component: HomePageComponent, pathMatch: 'full' },
   { path: 'meet-the-team', component: ComingSoonComponent },
   { path: 'insights', component: ComingSoonComponent },
-  { path: 'contact', component: ContactComponent },
+  { path: 'contact', component: ComingSoonComponent },
   { path: 'policies', component: PoliciesComponent },
   { path: 'community-projects', component: ComingSoonComponent },
   { path: 'open-source-banking', component: OpenSourceBankingComponent },
