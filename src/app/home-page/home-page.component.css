@@ -310,9 +310,9 @@
   }
   /* gradients */
   .button__orange-gradient {
-    width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 1rem;
     color: #ffffff;
     text-align: center;
@@ -329,11 +329,8 @@
     background: -o-linear-gradient(90deg, #ff8400 0%, #ff6633 100%);
     /* opera 11.10+ */
     background: -ms-linear-gradient(90deg, #ff8400 0%, #ff6633 100%);
-    /* ie10+ */
     background: linear-gradient(0deg, #ff8400 0%, #ff6633 100%);
-    /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400', GradientType=0);
-    /* ie6-9 */
   }
   /* icon cards */
   .plain-card {
@@ -2587,9 +2584,9 @@
   }
   .grid-container-white-happening {
     display: grid;
-    height: 700px;
+    height: 730px;
     grid-template-columns: auto 190px 190px 190px 190px 190px 190px auto;
-    grid-template-rows: 150px 300px 50px 200px;
+    grid-template-rows: 150px 300px 50px 230px;
     background-color: #fff;
   }
   .grid-item-white-happening-1 {
@@ -2634,7 +2631,7 @@
     text-align: center;
   }
   .image--duck {
-    height: 200px;
+    height: 250px;
     width: auto;
   }
   .button__orange-gradient {
@@ -2646,19 +2643,12 @@
     border-radius: 16px;
     background: #ff6633;
     background: -moz-linear-gradient(90deg, #ff8400 0%, #ff6633 100%);
-    /* ff3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6633), color-stop(100%, #ff8400));
-    /* safari4+,chrome */
     background: -webkit-linear-gradient(90deg, #ff8400 0%, #ff6633 100%);
-    /* safari5.1+,chrome10+ */
     background: -o-linear-gradient(90deg, #ff8400 0%, #ff6633 100%);
-    /* opera 11.10+ */
     background: -ms-linear-gradient(90deg, #ff8400 0%, #ff6633 100%);
-    /* ie10+ */
     background: linear-gradient(0deg, #ff8400 0%, #ff6633 100%);
-    /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400', GradientType=0);
-    /* ie6-9 */
   }
   /* icon cards */
   .plain-card {
@@ -2884,6 +2874,7 @@
   .cloud10 {
     bottom: 180px;
     left: 140%;
+    position: fixed;
   }
 }
 
