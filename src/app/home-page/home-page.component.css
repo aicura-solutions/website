@@ -182,8 +182,8 @@
     text-align: center;
   }
   .image--soldiers {
-    width: auto;
-    height: 200px;
+    width: 70%;
+    height: auto;
   }
   .grid-container-blue-info {
     display: grid;
@@ -752,8 +752,8 @@
     text-align: center;
   }
   .image--soldiers {
-    width: auto;
-    height: 200px;
+    width: 70%;
+    height: auto;
   }
   .grid-container-blue-info {
     display: grid;
@@ -1328,7 +1328,7 @@
     padding: 0;
   }
   .image--soldiers {
-    width: 350px;
+    width: 70%;
     height: auto;
   }
   .grid-container-blue-info {
@@ -1912,8 +1912,8 @@
     padding: 0;
   }
   .image--soldiers {
+    width: 70%;
     height: auto;
-    width: 380px;
   }
   .grid-container-blue-info {
     display: grid;
@@ -2480,8 +2480,8 @@
     padding: 0;
   }
   .image--soldiers {
-    width: auto;
-    height: 60%;
+    width: 70%;
+    height: auto;
   }
   .grid-container-blue-info {
     display: grid;
@@ -2852,7 +2852,7 @@
 
 .animatedBackground {
   background-repeat: repeat;
-  animation: animatedBackground 20s linear infinite;
+  animation: animatedBackground 5s linear infinite;
 }
 
 @keyframes animatedBackground {
@@ -2860,7 +2860,7 @@
     background-position: 0 0;
   }
   to {
-    background-position: 0 10000px;
+    background-position: 0 2000px;
   }
 }
 
