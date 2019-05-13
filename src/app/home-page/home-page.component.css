@@ -61,19 +61,10 @@
     height: auto;
     transform: rotate(10deg);
     z-index: 0;
-    animation: RocketAnimation 1.2s ease-in-out infinite;
     position: relative;
     left: -25%;
     bottom: 0;
     margin-top: 30px;
-  }
-  @keyframes RocketAnimation {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 50px;
-    }
   }
   .grid-container-white-clouds {
     display: grid;
@@ -158,10 +149,10 @@
   }
   .grid-container-white-info {
     display: grid;
-    height: 1050px;
+    height: 1100px;
     width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 200px 300px 200px 300px;
+    grid-template-rows: 200px 300px 200px 350px;
     background-color: #fff;
   }
   .grid-item-white-info-3 {
@@ -639,19 +630,10 @@
     height: auto;
     transform: rotate(10deg);
     z-index: 1;
-    animation: RocketAnimation 1.2s ease-in-out infinite;
     position: relative;
     left: -10%;
     margin-top: 50px;
     bottom: 0;
-  }
-  @keyframes RocketAnimation {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 50px;
-    }
   }
   .grid-container-white-clouds {
     display: grid;
@@ -1226,18 +1208,9 @@
     margin-top: 50px;
     margin-left: 100px;
     z-index: 1;
-    animation: RocketAnimation 1.2s ease-in-out infinite;
     position: relative;
     left: 0;
     bottom: 0;
-  }
-  @keyframes RocketAnimation {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 50px;
-    }
   }
   .grid-container-white-clouds {
     display: grid;
@@ -1828,18 +1801,9 @@
     margin-top: 50px;
     margin-left: 100px;
     z-index: 1;
-    animation: RocketAnimation 1.2s ease-in-out infinite;
     position: relative;
     left: 0;
     bottom: 0;
-  }
-  @keyframes RocketAnimation {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 50px;
-    }
   }
   .grid-container-white-clouds {
     display: grid;
@@ -2399,18 +2363,9 @@
     margin-top: 50px;
     margin-left: 300px;
     z-index: 1;
-    animation: RocketAnimation 1.2s ease-in-out infinite;
     position: relative;
     left: -10%;
     bottom: 0;
-  }
-  @keyframes RocketAnimation {
-    0%, 100% {
-      bottom: 0;
-    }
-    50% {
-      bottom: 50px;
-    }
   }
   .grid-container-white-clouds {
     display: grid;
@@ -2874,7 +2829,6 @@
   .cloud10 {
     bottom: 180px;
     left: 140%;
-    position: fixed;
   }
 }
 
