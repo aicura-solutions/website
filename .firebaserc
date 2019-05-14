@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "aicu-websrv-prod"
+  },
+  "targets": {
+    "aicu-websrv-prod": {
+      "hosting": {
+        "production": [
+          "website-production"
+        ],
+        "development": [
+          "website-development"
+        ]
+      }
+    }
+  }
+}
