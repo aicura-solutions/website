@@ -26,6 +26,9 @@ workflows:
     jobs:
       - deploy-develop:
           context: aicura-website-develop
+          filters:
+            branches:
+              only: development
       - deploy-production:
           context: aicura-website-production
           filters:
