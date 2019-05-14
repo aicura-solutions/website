@@ -6,10 +6,10 @@
     "aicu-websrv-prod": {
       "hosting": {
         "production": [
-          "website-production"
+          "aicu-websrv-prod"
         ],
         "development": [
-          "website-development"
+          "aicu-websrv-develop"
         ]
       }
     }

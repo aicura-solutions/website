@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run: npm install
       - run: npm run build
-      - run: npx firebase use --token $FIREBASE_DEPLOY_KEY $TARGET_ENVIRONMENT
+      - run: npx firebase use --token $FIREBASE_DEPLOY_KEY default
       - run: npx firebase deploy -m "branch $CIRCLE_BRANCH - workflow $CIRCLE_WORKFLOW_ID - build $CIRCLE_BUILD_NUM" --token $FIREBASE_DEPLOY_KEY --non-interactive --only hosting:$TARGET_ENVIRONMENT
 
   deploy-develop:
@@ -22,9 +22,8 @@ jobs:
 workflows:
   version: 2
 
-  test-deploy:
+  build-deploy:
     jobs:
-      - test
       - deploy-develop:
           context: aicura-website-develop
       - deploy-production:
