@@ -225,7 +225,7 @@ $extraLargeBreakpoint: 1200px;
       }
 
       @media screen and (min-width: $mediumBreakpoint) {
-        padding-left: 100px;
+        padding-left: 80px;
       }
 
       @media screen and (min-width: $largeBreakpoint) {
@@ -596,40 +596,72 @@ $extraLargeBreakpoint: 1200px;
     background-color: #fff;
 
     @media screen and (max-width: $extraSmallBreakpoint) {
+      height: 140px;
       grid-template-columns: 100%;
     }
 
     @media screen and (min-width: $smallBreakpoint) {
+      height: 160px;
       grid-template-columns: 100%;
     }
 
     @media screen and (min-width: $mediumBreakpoint) {
-      height: 400px;
+      height: 170px;
       grid-template-columns: auto 700px auto;
     }
 
-    @media screen and (min-width: $mediumBreakpoint) {
-      height: 400px;
-      grid-template-columns: auto 800px auto;
-    }
-
     @media screen and (min-width: $extraLargeBreakpoint) {
-      height: 400px;
+      height: 150px;
       grid-template-columns: auto 1140px auto;
     }
 
-    h1 {
-      color: $concreteGray;
-      font-size: 1.5rem;
+    .center-wrapper {
+      position: relative;
+      height: 100px;
 
       @media screen and (max-width: $extraSmallBreakpoint) {
+        grid-column: 1;
+        width: 90%;
+        margin: 0 5%;
         text-align: center;
+      }
+
+      @media screen and (min-width: $smallBreakpoint) {
+        grid-column: 1;
+        width: 90%;
+        margin: 0 5%;
+        text-align: center;
+      }
+
+      @media screen and (min-width: $mediumBreakpoint) {
+        grid-column: 2 / 3;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+      }
+
+      > h1 {
+        width: 100%;
+        position: absolute;
+        top: -100px;
+        z-index: 1;
+        color: $concreteGray;
+        font-size: 1.5rem;
+      }
+
+      > .slider {
+        background: white;
+        width: 99vw;
+        position: relative;
+        left: 49.5%;
+        right: 49.5%;
+        margin: 0 -51vw;
+        margin-top: 20px;
       }
 
     }
 
     .slider {
-      background: white;
       height: 100px;
       margin: auto;
       overflow: hidden;
