@@ -15,6 +15,7 @@ import { PoliciesComponent } from './policies/policies.component';
 import { ComingSoonComponent } from './coming-soon/coming-soon.component';
 import { OpenSourceBankingComponent } from './open-source-banking/open-source-banking.component';
 import { FrontEndAutomationComponent } from './front-end-automation/front-end-automation.component';
+import { NavigationToggleComponent } from './navigation-toggle/navigation-toggle.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FrontEndAutomationComponent } from './front-end-automation/front-end-au
     PoliciesComponent,
     ComingSoonComponent,
     OpenSourceBankingComponent,
-    FrontEndAutomationComponent
+    FrontEndAutomationComponent,
+    NavigationToggleComponent
   ],
   imports: [
     BrowserModule,
