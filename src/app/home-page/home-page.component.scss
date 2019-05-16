@@ -162,26 +162,85 @@ $extraLargeBreakpoint: 1200px;
 
 }
 
+  .gradient-wrapper {
+    @include nightSky();
+  }
+
   .hero-wrapper {
     display: grid;
     width: 100%;
+    height: 700px;
     color: #fff;
-    grid-template-columns: auto 60% auto;
-    grid-template-rows: 1fr 1fr 40px;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 1fr 1fr 100px;
     grid-template-areas:
-      "head      head       head        head"
-      "left      centerleft centerright right"
-      "footer    footer     footer      footer";
-    @include nightSky();
+      "headleft  headcenterl headcenterr head"
+      "left      headcenterl headcenterr right"
+      "footer    footer      footer      footer";
+    overflow: hidden;
+
+    @media screen and (max-width: $mediumBreakpoint) {
+      height: 600px;
+    }
 
     .head {
       grid-area: head;
+    }
+
+    .left-cloud {
+      grid-area: left;
+      position: relative;
+
+      > img {
+        bottom: 0px;
+        left: 0px;
+        position: absolute;
+        max-height: 100%;
+        width: auto;
+
+        @media screen and (max-width: $mediumBreakpoint) {
+          height: 40vw;
+        }
+
+        @media screen and (min-width: $mediumBreakpoint) {
+          height: 100%;
+
+        }
+
+      }
+
+    }
+
+    .top-left {
+      grid-area: headcenterl;
+      height: 100%;
+      padding-top: 100px;
+
+      @media screen and (max-width: $extraSmallBreakpoint) {
+        padding-top: 130px;
+      }
+
+      @media screen and (min-width: $smallBreakpoint) {
+        padding-left: 50px;
+      }
+
+      @media screen and (min-width: $mediumBreakpoint) {
+        padding-left: 100px;
+      }
+
+      @media screen and (min-width: $largeBreakpoint) {
+        padding-left: 100px;
+      }
+
+      @media screen and (min-width: $extraLargeBreakpoint) {
+        padding-left: 150px;
+      }
 
       h1 {
         font-weight: 500;
 
         @media screen and (max-width: $extraSmallBreakpoint) {
-          font-size: 2rem;
+          font-size: 1.3rem;
         }
 
         @media screen and (min-width: $smallBreakpoint) {
@@ -189,11 +248,11 @@ $extraLargeBreakpoint: 1200px;
         }
 
         @media screen and (min-width: $mediumBreakpoint) {
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
 
         @media screen and (min-width: $largeBreakpoint) {
-          font-size: 3.5rem;
+          font-size: 3rem;
         }
 
         @media screen and (min-width: $extraLargeBreakpoint) {
@@ -205,17 +264,17 @@ $extraLargeBreakpoint: 1200px;
       h3 {
         @media screen and (max-width: $extraSmallBreakpoint) {
           font-weight: 500;
-          font-size: 1.1rem;
+          font-size: 0.9rem;
         }
 
         @media screen and (min-width: $smallBreakpoint) {
           font-weight: 500;
-          font-size: 1.1rem;
+          font-size: 1rem;
         }
 
         @media screen and (min-width: $mediumBreakpoint) {
           font-weight: 500;
-          font-size: 1.8rem;
+          font-size: 1.3rem;
         }
 
       }
@@ -227,9 +286,11 @@ $extraLargeBreakpoint: 1200px;
         text-decoration: none;
         border-radius: 16px;
         border: 2px $happyOrange solid;
+        color: #fff;
 
         @media screen and (max-width: $extraSmallBreakpoint) {
           padding: 8px 20px;
+          font-size: 0.9rem;
         }
 
         @media screen and (min-width: $smallBreakpoint) {
@@ -242,21 +303,31 @@ $extraLargeBreakpoint: 1200px;
 
       }
 
-      .image--rocket {
+    }
+
+    .top-right {
+      grid-area: headcenterr;
+
+      > .image--rocket {
         height: auto;
         transform: rotate(10deg);
-        position: relative;
+        position: absolute;
+        z-index: 1;
 
         @media screen and (max-width: $extraSmallBreakpoint) {
-          width: 70%;
+          width: 100px;
+          margin-top: 100px;
+          margin-left: 20px;
         }
 
         @media screen and (min-width: $smallBreakpoint) {
-          width: 65%;
+          width: 150px;
+          margin-top: 50px;
+          margin-left: 80px;
         }
 
         @media screen and (min-width: $mediumBreakpoint) {
-          width: 200px;
+          width: 150px;
           margin-top: 50px;
           margin-left: 100px;
         }
@@ -264,35 +335,256 @@ $extraLargeBreakpoint: 1200px;
         @media screen and (min-width: $extraLargeBreakpoint) {
           width: 200px;
           margin-top: 50px;
-          margin-left: 300px;
+          margin-left: 250px;
+        }
+
+      }
+    }
+
+    .right-cloud {
+      grid-area: right;
+      position: relative;
+
+      > img {
+        bottom: 0px;
+        right: 0px;
+        position: absolute;
+        max-height: 100%;
+        width: auto;
+
+        @media screen and (max-width: $mediumBreakpoint) {
+          height: 40vw;
+        }
+
+        @media screen and (min-width: $mediumBreakpoint) {
+          height: 100%;
+
         }
 
       }
 
     }
 
-    .left-cloud {
-      grid-area: left;
-    }
-
-    .center-left {
-      grid-area: centerleft;
-    }
-
-    .center-right {
-      grid-area: centerright;
-    }
-
-    .right-cloud {
-      grid-area: right;
-    }
-
     .footer {
       grid-area: footer;
-    }
+      background-color: #fff;
+      z-index: 1;
+      padding-right: 20px;
 
-    @media screen and (max-width: $extraSmallBreakpoint) {
-      height: 600px;
+      > .white-circle-wrapper {
+        height: 100%;
+        width: 100%;
+        position: relative;
+        top: -30px;
+
+        > .default-circle {
+          display: inline-block;
+          background-color: #fff;
+
+          @media screen and (max-width: $mediumBreakpoint) {
+            height: 60px;
+            width: 60px;
+            margin-right: -20px;
+            border-radius: 30px;
+          }
+
+          @media screen and (min-width: $mediumBreakpoint) {
+            height: 120px;
+            width: 120px;
+            margin-right: -20px;
+            border-radius: 60px;
+          }
+
+        }
+
+        > .circle-1 {
+          display: inline-block;
+          background-color: #fff;
+          height: 70px;
+          width: 70px;
+          border-radius: 35px;
+          position: absolute;
+          top: -20px;
+        }
+
+        > .circle-2 {
+          display: inline-block;
+          background-color: #fff;
+          height: 80px;
+          width: 80px;
+          border-radius: 40px;
+          position: absolute;
+          top: -25px;
+          margin-left: 40px;
+        }
+
+        > .circle-3 {
+          display: inline-block;
+          background-color: #fff;
+          height: 80px;
+          width: 80px;
+          border-radius: 40px;
+          position: absolute;
+          top: -25px;
+          margin-left: 140px;
+        }
+
+        > .circle-4 {
+          display: inline-block;
+          background-color: #fff;
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+          position: absolute;
+          top: -30px;
+          margin-left: 290px;
+        }
+
+        > .circle-5 {
+          display: inline-block;
+          background-color: #fff;
+          height: 90px;
+          width: 90px;
+          border-radius: 45px;
+          position: absolute;
+          top: -25px;
+          margin-left: 500px;
+        }
+
+        > .circle-6 {
+          display: inline-block;
+          background-color: #fff;
+          height: 70px;
+          width: 70px;
+          border-radius: 35px;
+          position: absolute;
+          top: -30px;
+          margin-left: 300px;
+        }
+
+        > .circle-7 {
+          display: inline-block;
+          background-color: #fff;
+          height: 70px;
+          width: 70px;
+          border-radius: 35px;
+          position: absolute;
+          top: -10px;
+          margin-left: 300px;
+        }
+
+        > .circle-8 {
+          display: inline-block;
+          background-color: #fff;
+          height: 50px;
+          width: 50px;
+          border-radius: 25px;
+          position: absolute;
+          top: -10px;
+          margin-left: 380px;
+        }
+
+        > .circle-9 {
+          display: inline-block;
+          background-color: #fff;
+          height: 90px;
+          width: 90px;
+          border-radius: 45px;
+          position: absolute;
+          top: -25px;
+          margin-left: 420px;
+        }
+
+        > .circle-10 {
+          display: inline-block;
+          background-color: #fff;
+          height: 60px;
+          width: 60px;
+          border-radius: 30px;
+          position: absolute;
+          top: -22px;
+          margin-left: 670px;
+        }
+
+        > .circle-11 {
+          display: inline-block;
+          background-color: #fff;
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+          position: absolute;
+          top: -20px;
+          margin-left: 750px;
+        }
+
+        > .circle-12 {
+          display: inline-block;
+          background-color: #fff;
+          height: 60px;
+          width: 60px;
+          border-radius: 30px;
+          position: absolute;
+          top: -25px;
+          margin-left: 800px;
+        }
+
+        > .circle-13 {
+          display: inline-block;
+          background-color: #fff;
+          height: 80px;
+          width: 80px;
+          border-radius: 40px;
+          position: absolute;
+          top: -20px;
+          margin-left: 900px;
+        }
+
+        > .circle-14 {
+          display: inline-block;
+          background-color: #fff;
+          height: 100px;
+          width: 100px;
+          border-radius: 50px;
+          position: absolute;
+          top: -15px;
+          margin-left: 1050px;
+        }
+
+        > .circle-15 {
+          display: inline-block;
+          background-color: #fff;
+          height: 90px;
+          width: 90px;
+          border-radius: 45px;
+          position: absolute;
+          top: -25px;
+          margin-left: 1200px;
+        }
+
+        > .circle-16 {
+          display: inline-block;
+          background-color: #fff;
+          height: 70px;
+          width: 70px;
+          border-radius: 35px;
+          position: absolute;
+          top: -20px;
+          margin-left: 1300px;
+        }
+
+        > .circle-17 {
+          display: inline-block;
+          background-color: #fff;
+          height: 90px;
+          width: 90px;
+          border-radius: 345px;
+          position: absolute;
+          top: -25px;
+          margin-left: 1200px;
+        }
+
+      }
+
     }
 
   }
@@ -378,6 +670,7 @@ $extraLargeBreakpoint: 1200px;
   .orange-clouds-wrapper {
     display: grid;
     color: #fff;
+    z-index: 1;
     @include happyOrangeGradient;
 
     @media screen and (max-width: $extraSmallBreakpoint) {
@@ -684,6 +977,7 @@ $extraLargeBreakpoint: 1200px;
       .image--soldiers {
           width: 70%;
           height: auto;
+          margin-bottom: 10px;
       }
 
     }
@@ -1353,7 +1647,6 @@ br.keep {
   }
 
 }
-
 // Animations
 @keyframes scroll {
   0% {

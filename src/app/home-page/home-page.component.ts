@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import * as $ from 'jquery';
 
 @Component({
@@ -34,9 +35,11 @@ export class HomePageComponent implements OnInit {
   osBankingUrl = '/open-source-banking';
   frontendAutomationUrl = '/front-end-testing-automation';
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle('Aicura Solutions');
+
     $('.button__watch-video').on('click', e => {
       e.preventDefault();
       $('.video-container').addClass('show');
