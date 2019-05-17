@@ -687,7 +687,7 @@ $extraLargeBreakpoint: 1200px;
       top: 0;
     }
     .slider .slide-track {
-      animation: scroll 50s linear infinite;
+      animation: scroll 50s linear infinite alternate;
       display: flex;
       width: 100vw;
     }
@@ -1486,18 +1486,26 @@ $extraLargeBreakpoint: 1200px;
       .image--duck {
           height: 200px;
           width: auto;
-          margin-top: 50px;
 
           @media screen and (max-width: $extraSmallBreakpoint) {
-            margin-top: 20px;
+            margin-top: 60px;
+          }
+
+          @media screen and (min-width: $smallBreakpoint) {
+            margin-top: 100px;
+          }
+
+          @media screen and (min-width: $mediumBreakpoint) {
+            margin-top: 100px;
           }
 
           @media screen and (min-width: $largeBreakpoint) {
-            margin-top: 0;
+            margin-top: 50px;
           }
 
           @media screen and (min-width: $extraLargeBreakpoint) {
             height: 250px;
+            margin-top: 30px;
           }
       }
 
@@ -1641,6 +1649,13 @@ iframe {
   left: 5vw;
   width: 90vw;
   height: 30vh;
+
+  @media screen and (min-width: $largeBreakpoint) {
+    top: 20vh;
+    left: 20vw;
+    width: 60vw;
+    height: 60vh;
+  }
 }
 
 br {
@@ -1652,15 +1667,6 @@ br.keep {
 
 .stars {
   background: url("/assets/img/stars.png") repeat;
-}
-
-@keyframes animatedBackground {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 0 2000px;
-  }
 }
 
 .animatedBackground {
@@ -1679,6 +1685,25 @@ br.keep {
   }
 
 }
+
+.blue-waves {
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  top: 10px;
+
+  path {
+    stroke: #1499d6;
+    stroke-width: 5px;
+    fill: #1499d6;
+  }
+  svg {
+    height: 70px;
+    width: 4000px;
+  }
+
+}
+
 // Animations
 @keyframes scroll {
   0% {
@@ -1686,5 +1711,14 @@ br.keep {
   }
   100% {
     transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 2000px;
   }
 }

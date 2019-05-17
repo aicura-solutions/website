@@ -182,7 +182,7 @@
   .grid-container-sub-1 {
     display: grid;
     height: 400px;
-    grid-template-columns: auto 570px 570px auto;
+    grid-template-columns: auto 1140px auto;
     grid-template-rows: 100%;
     background: #ff6633;
     background: -moz-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
@@ -200,7 +200,6 @@
     grid-column: 2 / 3;
     grid-row: 1;
     padding-top: 150px;
-    padding-left: 150px;
   }
 
   .grid-item-2 {
