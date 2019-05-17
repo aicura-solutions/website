@@ -9,7 +9,7 @@ import { Title } from '@angular/platform-browser';
 export class HomePageComponent implements OnInit {
   // images
   rocketUrl = 'assets/img/aicura-rocket-medium.png';
-  soldiersUrl = 'assets/img/aicura-infantry-1.png';
+  soldiersUrl = 'assets/img/aicura-infantry.png';
   boxesUrl = 'assets/img/boxes.png';
   rubixUrl = 'assets/img/rubix-cube.png';
   duckUrl = 'assets/img/aicura-duck.png';
