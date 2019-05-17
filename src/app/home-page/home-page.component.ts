@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.css']
+  styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
   // images
@@ -34,9 +35,11 @@ export class HomePageComponent implements OnInit {
   osBankingUrl = '/open-source-banking';
   frontendAutomationUrl = '/front-end-testing-automation';
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle('Aicura Solutions');
+
     $('.button__watch-video').on('click', e => {
       e.preventDefault();
       $('.video-container').addClass('show');

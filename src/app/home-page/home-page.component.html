@@ -5,35 +5,83 @@
 <div class="grid-container-main">
 
   <app-aicura-logo-orange></app-aicura-logo-orange>
+  <app-navigation-toggle></app-navigation-toggle>
 
-  <div class="night-sky-gradient-container">
-    <div class="grid-container-night-sky stars animatedBackground">
-      <div class="grid-item-hero">
-        <h1>Launch faster</h1>
-        <h3>Innovate with us, and get your next fintech project off the ground quickly, easily, and brilliantly.</h3>
-        <button class="button__watch-video">Watch video</button>
+  <div class="gradient-wrapper">
+    <div class="hero-wrapper stars animatedBackground">
+      <div class="top-left">
+        <div class="main-hero-content">
+          <h1>Launch faster</h1>
+          <h3>Innovate with us, and get your next fintech project off the ground quickly, easily, and brilliantly.</h3>
+          <button class="button__watch-video">Watch video</button>
+        </div>
       </div>
-      <div class="grid-item grid-item-rocket">
+      <div class="top-right">
         <img class="image--rocket" src="{{ rocketUrl }}" alt="aicura-rocket-image">
+      </div>
+      <div class="left-cloud">
+        <img src="assets/img/clouds-left.png">
+      </div>
+      <div class="right-cloud">
+        <img src="assets/img/clouds-right.png">
+      </div>
+      <div class="footer">
+        <div class="white-circle-wrapper">
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle circle-1"></div>
+          <div class="default-circle circle-2"></div>
+          <div class="default-circle circle-3"></div>
+          <div class="default-circle circle-4"></div>
+          <div class="default-circle circle-5"></div>
+          <div class="default-circle circle-6"></div>
+          <div class="default-circle circle-7"></div>
+          <div class="default-circle circle-8"></div>
+          <div class="default-circle circle-9"></div>
+          <div class="default-circle circle-10"></div>
+          <div class="default-circle circle-11"></div>
+          <div class="default-circle circle-12"></div>
+          <div class="default-circle circle-13"></div>
+          <div class="default-circle circle-14"></div>
+          <div class="default-circle circle-15"></div>
+          <div class="default-circle circle-16"></div>
+          <div class="default-circle circle-17"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+          <div class="default-circle"></div>
+
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="grid-container-white-clouds">
-    <div class="grid-item grid-item-offset">
-      <h1 class="h1--offset">We deliver cutting-edge<br class="keep"> software for banks and their customers</h1>
-      <div id="cloud-container">
-        <div class="cloud cloud1"></div>
-        <div class="cloud cloud2"></div>
-        <div class="cloud cloud3"></div>
-        <div class="cloud cloud4"></div>
-        <div class="cloud cloud5"></div>
-        <div class="cloud cloud6"></div>
-        <div class="cloud cloud7"></div>
-        <div class="cloud cloud8"></div>
-        <div class="cloud cloud9"></div>
-        <div class="cloud cloud10"></div>
-      </div>
+
+  <div class="slider-wrapper">
+    <div class="center-wrapper">
+      <h1>We deliver cutting-edge<br class="keep"> software for banks and their customers</h1>
+
       <div class="slider">
         <div class="slide-track">
           <div class="slide">
@@ -65,92 +113,93 @@
     </div>
   </div>
 
-  <div class="grid-container-orange-clouds">
-    <div class="grid-item grid-item-orange-clouds-1">
-      <h3>Think you know fintech?<br> Think again</h3>
+  <div class="orange-clouds-wrapper">
+    <div class="grid-item orange-clouds-1">
+      <h3 class="padding-10">Think you know fintech?<br> Think again</h3>
     </div>
-    <div class="grid-item grid-item-orange-clouds-2">
-      <p>We can help you provide a better customer experience, at a lower cost, in a faster, more profitable and more
+    <div class="grid-item orange-clouds-2">
+      <p class="padding-10">We can help you provide a better customer experience, at a lower cost, in a faster, more
+        profitable and more
         agile way. Our solutions range from sandbox innovation and API management to full regulator-approved software
         delivery.</p>
     </div>
-    <div class="grid-item grid-item-orange-clouds-card-1">
+    <div class="grid-item orange-clouds-card-1">
       <div class="plain-card card--tight-right">
         <img class="image--innovate" src="{{ innovateUrl }}" alt="aicura-innovate-image">
         <h2>Innovate</h2>
       </div>
     </div>
-    <div class="grid-item grid-item-orange-clouds-card-2">
+    <div class="grid-item orange-clouds-card-2">
       <div class="plain-card">
         <img class="image--build" src="{{ buildUrl }}" alt="aicura-build-image">
         <h2>Build</h2>
       </div>
     </div>
-    <div class="grid-item grid-item-orange-clouds-card-3">
+    <div class="grid-item orange-clouds-card-3">
       <div class="plain-card card--tight-left">
         <img class="image--run" src="{{ runUrl }}" alt="aicura-run-image">
         <h2>Run</h2>
       </div>
     </div>
-    <!-- <div class="grid-item grid-item-orange-clouds-3">
-      <p>We use rapid service design and customer insight to run secure sandboxes for teams looking to refine and
-        prioritise new concepts.</p>
-    </div>
-    <div class="grid-item grid-item-orange-clouds-4"></div>
-    <div class="grid-item grid-item-orange-clouds-5"></div> -->
   </div>
 
 
-  <div class="grid-container-white-info">
-    <div class="grid-item grid-item-white-info-1">
-      <h1>Turning big builds<br> into child’s play</h1>
-      <p>We’re passionate about technology and we’re experts in code. We love playing in the sandbox - exploring the
+  <div class="white-info-wrapper">
+    <div class="grid-item white-info-1">
+      <h1 class="padding-10">Turning big builds<br> into child’s play</h1>
+      <p class="padding-10">We’re passionate about technology and we’re experts in code. We love playing in the sandbox
+        -
+        exploring the
         possibilities of open-source software and third-party modules, to spark fast, fresh solutions to traditional
         banking problems. </p>
     </div>
-    <div class="grid-item grid-item-white-info-3">
+    <div class="grid-item white-info-3">
       <img class="image--boxes" src="{{ boxesUrl }}" alt="boxes-image">
     </div>
-    <div class="grid-item grid-item-white-info-2">
-      <h1>An army of fintech talent,<br> ready to deploy</h1>
-      <p>With decades of combined financial services experience, we work with the toughest compliance processes,
+    <div class="grid-item white-info-2">
+      <h1 class="padding-10">An army of fintech talent,<br> ready to deploy</h1>
+      <p class="padding-10">With decades of combined financial services experience, we work with the toughest compliance
+        processes,
         architecture and budgets in the banking world. Mature, professional code standards, plus governance and
         protection built into every step, means there’s zero risk.</p>
       <a href="{{ meetTheTeamUrl }}"><button class="button__orange-gradient">Meet the team</button></a>
     </div>
-    <div class="grid-item grid-item-white-info-4">
+    <div class="grid-item white-info-4">
       <img class="image--soldiers" src="{{ soldiersUrl }}" alt="soldiers-image">
     </div>
   </div>
 
-  <div class="grid-container-blue-info">
-    <div class="grid-item grid-item-blue-info-1">
-      <h1>Problem solving<br> is our speciality</h1>
-      <p>We pride ourselves in attracting the highest-grade engineers and developers. Our talented, tech-savvy team is
+  <div class="blue-info-wrapper">
+    <div class="grid-item blue-info-1">
+      <h1 class="padding-10">Problem solving<br> is our speciality</h1>
+      <p class="padding-10">We pride ourselves in attracting the highest-grade engineers and developers. Our talented,
+        tech-savvy team is
         curious, dynamic and always ahead of the curve. They love using the latest tools and tech to create truly
         cutting-edge client software.</p>
       <a href="{{ contactUrl }}"><button class="button__orange-gradient">Want to join us?</button></a>
     </div>
-    <div class="grid-item grid-item-blue-info-3">
+    <div class="grid-item blue-info-3">
       <img class="image--rubix" src="{{ rubixUrl }}" alt="aicura-rubix-cube-image">
     </div>
-    <div class="grid-item grid-item-blue-info-2">
-      <h1>Get faster results</h1>
-      <p>Powerful prototyping and rapid, agile sprints mean we refine and prioritise new concepts at speed, without
+    <div class="grid-item blue-info-2">
+      <h1 class="padding-10">Get faster results</h1>
+      <p class="padding-10">Powerful prototyping and rapid, agile sprints mean we refine and prioritise new concepts at
+        speed, without
         disrupting your business operations. Our Vaultigo sandbox with ready-to-deploy solutions, API management and
         secure environment allow us to design, build and test more rapidly than most.</p>
     </div>
-    <div class="grid-item grid-item-blue-info-4"></div>
+    <div class="grid-item blue-info-4"></div>
   </div>
 
 
-  <div class="grid-container-grey-community">
-    <div class="grid-item grid-item-grey-community-1">
+  <div class="grey-community-wrapper">
+    <div class="grid-item grey-community-1">
       <img class="image--pig" src="{{ pigUrl }}" alt="aicura-pig-image">
     </div>
-    <div class="grid-item grid-item-grey-community-2">
-      <h1>At least 5% of Aicura profits go to charity</h1>
-      <p>We may not be a big corporation, but social responsibility is hugely important to us. We donate at least 5%
+    <div class="grid-item grey-community-2">
+      <h1 class="padding-10">At least 5% of Aicura profits go to charity</h1>
+      <p class="padding-10">We may not be a big corporation, but social responsibility is hugely important to us. We
+        donate at least 5%
         of
         our annual profits to community projects and, to date, we’ve supported Literacy Lab (The Children’s Literacy
         Charity), Qhubeka and Lidgetton Community Project. </p>
@@ -158,13 +207,14 @@
     </div>
   </div>
 
-  <div class="grid-container-white-happening">
-    <div class="grid-item grid-item-white-happening-1">
+  <div class="white-insights-wrapper">
+    <div class="grid-item white-insights-1">
       <h1>Insights</h1>
-      <p>Tap into the awesome expertise of our team. We embrace collaboration and regularly give our people the
+      <p class="padding-10">Tap into the awesome expertise of our team. We embrace collaboration and regularly give our
+        people the
         opportunity to step into the spotlight and share their insights on our blog. </p>
     </div>
-    <div class="grid-item grid-item-white-happening-2">
+    <div class="grid-item white-insights-2">
       <div class="card card-left">
         <div class="thumb aicura-hackathon">
         </div>
@@ -177,7 +227,7 @@
         </article>
       </div>
     </div>
-    <div class="grid-item grid-item-white-happening-3">
+    <div class="grid-item white-insights-3">
       <div class="card card-center">
         <div class="thumb open-source-banking">
         </div>
@@ -190,7 +240,7 @@
         </article>
       </div>
     </div>
-    <div class="grid-item grid-item-white-happening-4">
+    <div class="grid-item white-insights-4">
       <div class="card card-right">
         <div class="thumb frontend-automation">
         </div>
@@ -203,15 +253,23 @@
         </article>
       </div>
     </div>
-    <div class="grid-item grid-item-white-happening-5">
+    <div class="grid-item white-insights-5">
       <a href="{{ seeAllPostsUrl }}"><button class="button__orange-gradient">See all posts</button></a>
     </div>
-    <div class="grid-item grid-item-white-happening-6">
-      <h2>Tricky tech issues?<br class="keep"> We love a challenge, so get in touch.</h2>
+    <div class="grid-item white-insights-6">
+      <h2 class="padding-10">Tricky tech issues?<br class="keep"> We love a challenge, so get in touch.</h2>
     </div>
-    <div class="grid-item grid-item-white-happening-7">
+    <div class="grid-item white-insights-7">
       <img class="image--duck" src="{{ duckUrl }}" alt="aicura-duck-image">
     </div>
+  </div>
+
+  <div class="blue-waves">
+    <svg>
+      <path
+        d="M 0 18 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0  l 0 50 l -880 200000 z" />
+      zw
+    </svg>
   </div>
 
   <app-footer></app-footer>
