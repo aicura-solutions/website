@@ -611,7 +611,7 @@ $extraLargeBreakpoint: 1200px;
     }
 
     @media screen and (min-width: $extraLargeBreakpoint) {
-      height: 150px;
+      height: 250px;
       grid-template-columns: auto 1140px auto;
     }
 

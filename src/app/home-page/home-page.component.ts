@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import * as $ from 'jquery';
 
 @Component({
   selector: 'app-home-page',
@@ -10,7 +9,7 @@ import * as $ from 'jquery';
 export class HomePageComponent implements OnInit {
   // images
   rocketUrl = 'assets/img/aicura-rocket-medium.png';
-  soldiersUrl = 'assets/img/aicura-infantry.png';
+  soldiersUrl = 'assets/img/aicura-infantry-1.png';
   boxesUrl = 'assets/img/boxes.png';
   rubixUrl = 'assets/img/rubix-cube.png';
   duckUrl = 'assets/img/aicura-duck.png';
@@ -40,20 +39,25 @@ export class HomePageComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle('Aicura Solutions');
 
-    $('.button__watch-video').on('click', e => {
-      e.preventDefault();
-      $('.video-container').addClass('show');
+    const watchVideoBtn = document.getElementsByClassName('button__watch-video');
+    const videoContainer = document.getElementsByClassName('video-container');
+    const iframe = document.getElementsByTagName('iframe');
+
+    watchVideoBtn[0].addEventListener('click', event => {
+      event.preventDefault();
+      videoContainer[0].className += ' show';
     });
 
-    $('.video-container').on('click', e => {
-      e.preventDefault();
-      e.stopPropagation();
-      $('.video-container').removeClass('show');
+    videoContainer[0].addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      videoContainer[0].classList.remove('show');
     });
 
-    $('iframe').on('click', e => {
-      e.stopPropagation();
+    iframe[0].addEventListener('click', event => {
+      event.stopPropagation();
     });
+
   }
 
 }
