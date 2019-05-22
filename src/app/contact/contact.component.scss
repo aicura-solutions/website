@@ -1,3 +1,93 @@
+// Variables
+$happyOrange:#ff6633;
+$techBlue: #1b70a3;
+$concreteGray: #53606b;
+$chilledOutBlue: #1499d6;
+
+$extraSmallBreakpoint: 576px;
+$smallBreakpoint: $extraSmallBreakpoint;
+$mediumBreakpoint: 768px;
+$largeBreakpoint: 992px;
+$extraLargeBreakpoint: 1200px;
+
+// Mixins
+@mixin happyOrangeGradient {
+  background: #ff6633;
+  background: -moz-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ff6633), color-stop(100%, #ff8400));
+  background: -webkit-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
+  background: -o-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
+  background: -ms-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
+  background: linear-gradient(330deg, #ff8400 0%, #ff6633 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400', GradientType=0);
+}
+
+.blue-waves {
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  top: 10px;
+
+  path {
+    stroke: #1499d6;
+    stroke-width: 5px;
+    fill: #1499d6;
+  }
+  svg {
+    height: 70px;
+    width: 4000px;
+  }
+
+}
+
+.button__orange-gradient {
+  width: 40% !important;
+  margin: 0 30%;
+  font-size: 1rem !important;
+  padding: 0 !important;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 50px;
+  border-radius: 16px;
+  background: #ff6633;
+  background: -moz-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6633), color-stop(100%, #ff8400)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* ie10+ */
+  background: linear-gradient(0deg, #ff8400 0%, #ff6633 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400',GradientType=0 ); /* ie6-9 */
+}
+
+.image--duck {
+  height: 200px;
+  width: auto;
+
+  @media screen and (max-width: $extraSmallBreakpoint) {
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width: $smallBreakpoint) {
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: $mediumBreakpoint) {
+    margin-top: 100px;
+  }
+
+  @media screen and (min-width: $largeBreakpoint) {
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: $extraLargeBreakpoint) {
+    height: 250px;
+    margin-top: -90px;
+    margin-right: 100px;
+  }
+}
+
+
 .grid-container {
   width: 100%;
   height: 100%;
@@ -7,17 +97,13 @@
 .grid-container-sub-1 {
   display: grid;
   height: 400px;
+  color: #fff;
+
   grid-template-columns: auto 570px 570px auto;
   grid-template-rows: 100%;
-  background: #ff6633;
-  background: -moz-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ff6633), color-stop(100%, #ff8400));
-  background: -webkit-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
-  background: -o-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
-  background: -ms-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
-  background: linear-gradient(330deg, #ff8400 0%, #ff6633 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400',GradientType=0 );
-  color: #fff;
+
+  @include happyOrangeGradient;
+
 }
 
 .grid-item-1 {
@@ -25,7 +111,12 @@
   grid-column: 2 / 3;
   grid-row: 1;
   padding-top: 150px;
-  padding-left: 150px;
+
+  h1 {
+    font-weight: lighter;
+    font-size: 3rem;
+  }
+
 }
 
 .grid-item-2 {
@@ -36,16 +127,151 @@
 
 .grid-container-sub-2 {
   display: grid;
-  height: 600px;
-  grid-template-columns: auto 1140px auto;
-  grid-template-rows: 100%;
+
+  @media screen and (max-width: $extraSmallBreakpoint) {
+    grid-template-columns: auto 48% 48% auto;
+    grid-template-rows: 20% 70% 10%;
+    height: 100%;
+  }
+  
+  @media screen and (min-width: $smallBreakpoint) {
+    grid-template-columns: auto 48% 48% auto;
+    grid-template-rows: 20% 70% 10%;
+    height: 100%;
+  }
+
+  @media screen and (min-width: $mediumBreakpoint) {
+    grid-template-columns: auto 48% 48% auto;
+    grid-template-rows: 100%;
+  }
+
+  @media screen and (min-width: $largeBreakpoint) {
+    grid-template-columns: auto 450px 450px auto;
+    height: 1000px;
+    grid-template-rows: 20% 70% 10%;
+  }
+
+  @media screen and (min-width: $extraLargeBreakpoint) {
+    grid-template-columns: auto 570px 570px auto;
+    height: 1000px;
+    grid-template-rows: 20% 70% 10%;
+  }
+}
+
+.grid-item-5 {
+  grid-column: 2 / 4;
+  grid-row: 1;
+  padding-top: 100px;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+  }
+
 }
 
 .grid-item-3 {
   height: 100%;
   grid-column: 2 / 3;
-  grid-row: 1;
+  grid-row: 2;
   padding: 0 20px;
+}
+
+.grid-item-4 {
+  height: 100%;
+  grid-column: 3 / 4;
+  grid-row: 2;
+  padding: 0 20px;
+
+  .contact-card {
+    background: $chilledOutBlue;
+    width: 80%;
+    margin: 0 20%;
+    height: 310px;
+    margin-top: 120px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+    color: #fff;
+
+    ul {
+      height: 100%;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      @media screen and (min-width: $largeBreakpoint) {
+        width: 90%;
+        margin: 0 5%;
+        padding: 0;
+        text-align: center;
+      }
+
+      @media screen and (min-width: $extraLargeBreakpoint) {
+        text-align: left;
+      }
+
+      li {
+
+        @media screen and (min-width: $largeBreakpoint) {
+          font-size: 1.2rem;
+        }
+
+        @media screen and (min-width: $extraLargeBreakpoint) {
+          font-size: 1.4rem;
+        }
+
+        i {
+          margin-right: 10px;
+        }
+
+      }
+
+    }
+
+  }
+}
+
+.grid-item-6 {
+  text-align: center;
+
+  @media screen and (max-width: $extraSmallBreakpoint) {
+    grid-column: 1;
+    grid-row: 6;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $smallBreakpoint) {
+    grid-column: 1;
+    grid-row: 6;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $mediumBreakpoint) {
+    grid-column: 2 / 3;
+    grid-row: 3;
+  }
+
+  @media screen and (min-width: $largeBreakpoint) {
+    grid-column: 2 / 3;
+    grid-row: 3;
+  }
+
+  > h2 {
+    color: $happyOrange;
+    margin-top: -20px;
+  }
+
+}
+
+.grid-item-7 {
+  grid-column: 3 / 4;
+  grid-row: 3;
+  width: 100%;
+  height: 100%;
+  text-align: right;
 }
 
 .contact-form {
@@ -63,6 +289,8 @@
   height: 35px;
   font-size: 1.3rem;
   padding-left: 5px;
+  border-radius: 10px;
+  border: 1px solid #666666ab;
 }
 
 .contact-form > textarea {
@@ -70,24 +298,10 @@
   margin-bottom: 20px;
   font-size: 1.3rem;
   padding-left: 5px;
+  border-radius: 10px;
+  border: 1px solid #666666ab;
 }
 
-.button__orange-gradient {
-  width: 40% !important;
-  margin-left: 60%;
-  font-size: 1rem !important;
-  padding: 0 !important;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  padding: 8px 50px;
-  border-radius: 16px;
-  background: #ff6633;
-  background: -moz-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* ff3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6633), color-stop(100%, #ff8400)); /* safari4+,chrome */
-  background: -webkit-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* safari5.1+,chrome10+ */
-  background: -o-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* opera 11.10+ */
-  background: -ms-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* ie10+ */
-  background: linear-gradient(0deg, #ff8400 0%, #ff6633 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400',GradientType=0 ); /* ie6-9 */
+.contact-form > input[type='submit'] {
+  border: none;
 }
