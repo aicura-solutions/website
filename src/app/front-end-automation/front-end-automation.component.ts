@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./front-end-automation.component.scss']
 })
 export class FrontEndAutomationComponent implements OnInit {
+  duckUrl = 'assets/img/aicura-duck.png';
 
   constructor() { }
 
