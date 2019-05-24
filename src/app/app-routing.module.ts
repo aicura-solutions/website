@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'about', component: ComingSoonComponent },
   { path: 'our-team', component: ComingSoonComponent },
   { path: '**', component: PageNotFoundComponent }
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
