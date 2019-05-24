@@ -8,6 +8,7 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class PoliciesComponent implements OnInit {
   privacyPolicyUrl = 'assets/resources/Aicura-Privacy-Policy.pdf';
+  duckUrl = 'assets/img/aicura-duck.png';
 
   constructor() { }
 

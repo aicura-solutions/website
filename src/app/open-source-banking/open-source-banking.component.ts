@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./open-source-banking.component.scss']
 })
 export class OpenSourceBankingComponent implements OnInit {
+  duckUrl = 'assets/img/aicura-duck.png';
 
   constructor() { }
 

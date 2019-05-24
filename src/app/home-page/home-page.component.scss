@@ -1,49 +1,4 @@
-// Variables
-$happyOrange:#ff6633;
-$techBlue: #1b70a3;
-$concreteGray: #53606b;
-$chilledOutBlue: #1499d6;
-
-$extraSmallBreakpoint: 576px;
-$smallBreakpoint: $extraSmallBreakpoint;
-$mediumBreakpoint: 768px;
-$largeBreakpoint: 992px;
-$extraLargeBreakpoint: 1200px;
-
-// Mixins
-@mixin nightSky {
-  background: #53606b;
-  background: -moz-linear-gradient(240deg, #202020 0%, #364048 32%, #53606b 100%);
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #53606b), color-stop(68%, #364048), color-stop(100%, #202020));
-  background: -webkit-linear-gradient(240deg, #202020 0%, #364048 32%, #53606b 100%);
-  background: -o-linear-gradient(240deg, #202020 0%, #364048 32%, #53606b 100%);
-  background: -ms-linear-gradient(240deg, #202020 0%, #364048 32%, #53606b 100%);
-  background: linear-gradient(210deg, #202020 0%, #364048 32%, #53606b 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202020', endColorstr='#53606b', GradientType=0);
-}
-
-@mixin happyOrangeGradient {
-  background: #ff6633;
-  background: -moz-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ff6633), color-stop(100%, #ff8400));
-  background: -webkit-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
-  background: -o-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
-  background: -ms-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
-  background: linear-gradient(330deg, #ff8400 0%, #ff6633 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400', GradientType=0);
-}
-
-@mixin chilledBlueGradient {
-  background: #1499d6;
-  background: -moz-linear-gradient;
-  background: -moz-linear-gradient(120deg, #5fc2f0 0%, #1499d6 100%);
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1499d6), color-stop(100%, #5fc2f0));
-  background: -webkit-linear-gradient(120deg, #5fc2f0 0%, #1499d6 100%);
-  background: -o-linear-gradient(120deg, #5fc2f0 0%, #1499d6 100%);
-  background: -ms-linear-gradient(120deg, #5fc2f0 0%, #1499d6 100%);
-  background: linear-gradient(330deg, #5fc2f0 0%, #1499d6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1499d6', endColorstr='#5fc2f0', GradientType=0);
-}
+@import '../../assets/styles/_consts';
 
 // Hierarchy
 .grid-container-main {
@@ -237,7 +192,7 @@ $extraLargeBreakpoint: 1200px;
       }
 
       h1 {
-        font-weight: 500;
+        font-weight: lighter;
 
         @media screen and (max-width: $extraSmallBreakpoint) {
           font-size: 1.3rem;
@@ -611,7 +566,7 @@ $extraLargeBreakpoint: 1200px;
     }
 
     @media screen and (min-width: $extraLargeBreakpoint) {
-      height: 250px;
+      height: 170px;
       grid-template-columns: auto 1140px auto;
     }
 
@@ -647,6 +602,7 @@ $extraLargeBreakpoint: 1200px;
         z-index: 1;
         color: $concreteGray;
         font-size: 1.5rem;
+        padding-left: -150px;
       }
 
       > .slider {
@@ -690,6 +646,7 @@ $extraLargeBreakpoint: 1200px;
       animation: scroll 50s linear infinite alternate;
       display: flex;
       width: 100vw;
+      transform: rotateZ(0);
     }
     .slider .slide {
       height: 100px;
@@ -981,6 +938,7 @@ $extraLargeBreakpoint: 1200px;
       }
 
       @media screen and (min-width: $mediumBreakpoint) {
+        text-align: left;
         grid-column: 2 / 3;
         grid-row: 1;
       }
@@ -1671,7 +1629,8 @@ br.keep {
 
 .animatedBackground {
   background-repeat: repeat;
-  animation: animatedBackground 20s linear infinite;
+  animation: animatedBackground 40s linear infinite;
+  transform: rotateZ(0);
 }
 
 .a--no-decoration {

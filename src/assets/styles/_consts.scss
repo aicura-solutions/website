@@ -1,0 +1,66 @@
+// Variables
+$happyOrange:#ff6633;
+$techBlue: #1b70a3;
+$concreteGray: #53606b;
+$chilledOutBlue: #1499d6;
+
+$extraSmallBreakpoint: 576px;
+$smallBreakpoint: $extraSmallBreakpoint;
+$mediumBreakpoint: 768px;
+$largeBreakpoint: 992px;
+$extraLargeBreakpoint: 1200px;
+
+// Mixins
+@mixin nightSky {
+  background: #53606b;
+  background: -moz-linear-gradient(240deg, #202020 0%, #364048 32%, #53606b 100%);
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #53606b), color-stop(68%, #364048), color-stop(100%, #202020));
+  background: -webkit-linear-gradient(240deg, #202020 0%, #364048 32%, #53606b 100%);
+  background: -o-linear-gradient(240deg, #202020 0%, #364048 32%, #53606b 100%);
+  background: -ms-linear-gradient(240deg, #202020 0%, #364048 32%, #53606b 100%);
+  background: linear-gradient(210deg, #202020 0%, #364048 32%, #53606b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#202020', endColorstr='#53606b', GradientType=0);
+}
+
+@mixin happyOrangeGradient {
+  background: #ff6633;
+  background: -moz-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #ff6633), color-stop(100%, #ff8400));
+  background: -webkit-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
+  background: -o-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
+  background: -ms-linear-gradient(120deg, #ff8400 0%, #ff6633 100%);
+  background: linear-gradient(330deg, #ff8400 0%, #ff6633 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400', GradientType=0);
+}
+
+@mixin chilledBlueGradient {
+  background: #1499d6;
+  background: -moz-linear-gradient;
+  background: -moz-linear-gradient(120deg, #5fc2f0 0%, #1499d6 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #1499d6), color-stop(100%, #5fc2f0));
+  background: -webkit-linear-gradient(120deg, #5fc2f0 0%, #1499d6 100%);
+  background: -o-linear-gradient(120deg, #5fc2f0 0%, #1499d6 100%);
+  background: -ms-linear-gradient(120deg, #5fc2f0 0%, #1499d6 100%);
+  background: linear-gradient(330deg, #5fc2f0 0%, #1499d6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1499d6', endColorstr='#5fc2f0', GradientType=0);
+}
+
+// Class styles
+.button__orange-gradient {
+  font-size: 1rem !important;
+  padding: 0 !important;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 50px;
+  height: 40px;
+  border-radius: 16px;
+  background: #ff6633;
+  background: -moz-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff6633), color-stop(100%, #ff8400)); /* safari4+,chrome */
+  background: -webkit-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(90deg, #ff8400 0%, #ff6633 100%); /* ie10+ */
+  background: linear-gradient(0deg, #ff8400 0%, #ff6633 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400',GradientType=0 ); /* ie6-9 */
+}
