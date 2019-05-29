@@ -1,12 +1,87 @@
 <div class="grid-container">
 
   <app-aicura-logo-white></app-aicura-logo-white>
+  <app-navigation-toggle-white></app-navigation-toggle-white>
 
   <div class="grid-container-sub-1">
     <div class="grid-item-1">
       <h1>Insights</h1>
-      <p>Changing the way you look at FinTech</p>
+      <h3>Changing the way you look at fintech.</h3>
+    </div>
+    <div class="grid-item-2"></div>
+  </div>
+
+  <div class="grid-container-sub-2">
+
+    <div class="filters">
+      <button class="button-filter" (click)="onClickAll()" autofocus>All</button>
+      <button class="button-filter" (click)="onClickEvents()">Events</button>
+      <button class="button-filter" (click)="onClickPress()">Press</button>
+      <button class="button-filter" (click)="onClickInsights()">Insights</button>
+      <button class="button-filter" (click)="onClickCaseStudies()">
+        Case Studies
+      </button>
+    </div>
+
+    <div *ngIf="noResults" class="no-insights">
+      <p>Oh no, the insights have disappeared! Try another filter.</p>
+    </div>
+
+    <div *ngIf="loadEvents || loadAll" class="padding-bottom-20 padding-left-right-10">
+      <div class="card card1">
+        <div class="thumb aicura-hackathon"></div>
+        <button class="button">Event</button>
+        <article>
+          <a href="/front-end-testing-automation" class="a--no-decoration">
+            <h1>The Future Is Here: Front-end Testing Automation</h1>
+          </a>
+          <span>20th April 2019</span>
+        </article>
+      </div>
+    </div>
+
+    <div *ngIf="loadInsights || loadAll" class="padding-bottom-20 padding-left-right-10">
+      <div class="card card2">
+        <div class="thumb open-source-banking"></div>
+        <button class="button">Insight</button>
+        <article>
+          <a href="/open-source-banking" class="a--no-decoration">
+            <h1>Open [Source] Banking</h1>
+          </a>
+          <span>27th April 2019</span>
+        </article>
+      </div>
+    </div>
+
+    <div *ngIf="loadInsights || loadAll" class="padding-bottom-20 padding-left-right-10">
+      <div class="card card3">
+        <div class="thumb frontend-automation"></div>
+        <button class="button">Insight</button>
+        <article>
+          <a href="/front-end-testing-automation" class="a--no-decoration">
+            <h1>The Future Is Here: Front-end Testing Automation</h1>
+          </a>
+          <span>20th April 2019</span>
+        </article>
+      </div>
+    </div>
+
+    <div class="grid-item-3">
+      <h2 class="padding-10">Tricky tech issues?<br class="keep"> We love a challenge, so get in touch.</h2>
+    </div>
+    <div class="grid-item-4">
+      <img class="image--duck" src="{{ duckUrl }}" alt="aicura-duck-image">
     </div>
   </div>
 
+
+  <div class="blue-waves">
+    <svg>
+      <path
+        d="M 0 18 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0  l 0 50 l -880 200000 z" />
+      zw
+    </svg>
+  </div>
+
+  <app-footer></app-footer>
 </div>
