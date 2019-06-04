@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-front-end-automation',
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class FrontEndAutomationComponent implements OnInit {
   duckUrl = 'assets/img/aicura-duck.png';
 
-  constructor() { }
+  constructor(title: Title) {
+    title.setTitle('Front-end Testing Automation');
+  }
 
   ngOnInit() {
   }

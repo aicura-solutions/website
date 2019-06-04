@@ -17,6 +17,7 @@ import { OpenSourceBankingComponent } from './open-source-banking/open-source-ba
 import { FrontEndAutomationComponent } from './front-end-automation/front-end-automation.component';
 import { NavigationToggleComponent } from './navigation-toggle/navigation-toggle.component';
 import { NavigationToggleWhiteComponent } from './navigation-toggle-white/navigation-toggle-white.component';
+import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { NavigationToggleWhiteComponent } from './navigation-toggle-white/naviga
     OpenSourceBankingComponent,
     FrontEndAutomationComponent,
     NavigationToggleComponent,
-    NavigationToggleWhiteComponent
+    NavigationToggleWhiteComponent,
+    AboutUsPageComponent
   ],
   imports: [
     BrowserModule,

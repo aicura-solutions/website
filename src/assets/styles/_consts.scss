@@ -64,3 +64,14 @@ $extraLargeBreakpoint: 1200px;
   background: linear-gradient(0deg, #ff8400 0%, #ff6633 100%); /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6633', endColorstr='#ff8400',GradientType=0 ); /* ie6-9 */
 }
+
+button {
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+button:hover {
+  -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);    
+}

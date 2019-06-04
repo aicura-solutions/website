@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-meet-the-team',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MeetTheTeamComponent implements OnInit {
 
-  constructor() { }
+  constructor(title: Title) {
+    title.setTitle('Meet The Team');
+  }
 
   ngOnInit() {
   }
