@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { all } from 'q';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-insights',
@@ -17,7 +18,9 @@ export class InsightsComponent implements OnInit {
   loadInsights = false;
   loadCaseStudies = false;
 
-  constructor() { }
+  constructor(title: Title) {
+    title.setTitle('Insights');
+  }
 
   ngOnInit() {
   }

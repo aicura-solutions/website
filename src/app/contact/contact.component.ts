@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
   duckUrl = 'assets/img/aicura-duck.png';
 
-  constructor() { }
+  constructor(title: Title) {
+    title.setTitle('Contact');
+  }
 
   ngOnInit() {
   }
