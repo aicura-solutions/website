@@ -9,6 +9,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class InsightsComponent implements OnInit {
   duckUrl = 'assets/img/aicura-duck.png';
+  binoUrl = 'assets/img/insights.png';
 
   noResults = false;
 
