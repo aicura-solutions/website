@@ -1,0 +1,30 @@
+@import '../../assets/styles/_consts';
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+}
+
+.grid-container-sub-1 {
+  display: grid;
+  height: 400px;
+  grid-template-columns: auto 570px 570px auto;
+  grid-template-rows: 100%;
+  @include happyOrangeGradient;
+  color: #fff;
+}
+
+.grid-item-1 {
+  color: #fff;
+  grid-column: 2 / 3;
+  grid-row: 1;
+  padding-top: 150px;
+  padding-left: 150px;
+}
+
+.grid-item-2 {
+  height: 100%;
+  grid-column: 3 / 4;
+  grid-row: 1;
+}

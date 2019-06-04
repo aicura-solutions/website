@@ -1,0 +1,104 @@
+@import '../../assets/styles/_consts';
+
+.footer-wrapper {
+  background-color: #1499d6;
+  display: grid;
+  width: 100%;
+
+  @media screen and (max-width: $extraSmallBreakpoint) {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+
+  @media screen and (min-width: $smallBreakpoint) {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+  }
+
+  @media screen and (min-width: $largeBreakpoint) {
+    grid-template-columns: auto 900px auto;
+    grid-template-rows: 100%;
+  }
+
+  @media screen and (min-width: $extraLargeBreakpoint) {
+    grid-template-columns: auto 1140px auto;
+    grid-template-rows: 100%;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-1 {
+    text-align: center;
+    padding-top: 10px;
+
+    @media screen and (max-width: $extraSmallBreakpoint) {
+      margin-top: auto;
+      margin-bottom: auto;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    @media screen and (min-width: $smallBreakpoint) {
+      margin-top: auto;
+      margin-bottom: auto;
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    @media screen and (min-width: $largeBreakpoint) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+
+  }
+
+  .footer-content {
+    color: white;
+    width: 100%;
+    margin-bottom: 30px;
+
+    > p {
+      margin: 10px;
+    }
+
+    .div__links {
+
+      @media screen and (max-width: $extraSmallBreakpoint) {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media screen and (min-width: $smallBreakpoint) {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media screen and (min-width: $largeBreakpoint) {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+    }
+
+    .div__logos {
+      height: 50px;
+      vertical-align: middle;
+
+      .logo__margin {
+        margin-left: 10px;
+        margin-right: 5px;
+      }
+
+    }
+
+  }
+
+}

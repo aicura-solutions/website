@@ -1,0 +1,47 @@
+@import '../../assets/styles/_consts';
+
+.content-wrapper {
+  width: 100%;
+  height: 100%;
+  display: grid;
+
+  .content-sub-1 {
+    display: grid;
+    height: 400px;
+    color: #fff;
+    grid-template-rows: 100%;
+    @include happyOrangeGradient;
+
+    @media screen and (max-width: $extraSmallBreakpoint) {
+      grid-template-columns: auto 96% auto;
+    }
+
+    @media screen and (min-width: $smallBreakpoint) {
+      grid-template-columns: auto 96% auto;
+    }
+
+    @media screen and (min-width: $mediumBreakpoint) {
+      grid-template-columns: auto 80% auto;
+    }
+
+    .content-item-1 {
+      color: #fff;
+      grid-column: 2 / 3;
+      grid-row: 1;
+      padding-top: 150px;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      a {
+          color: white;
+      }
+
+      > h1 {
+        font-weight: lighter;
+      }
+
+    }
+
+  }
+
+}

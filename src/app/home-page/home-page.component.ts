@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.css']
+  styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
   // images
@@ -27,30 +27,37 @@ export class HomePageComponent implements OnInit {
   tsbUrl = 'assets/img/brands/tsb-logo.svg';
   wongaUrl = 'assets/img/brands/wonga-logo.svg';
 
-  meetTheTeamUrl = '/meet-the-team';
-  communityProjectsUrl = '/community-projects';
+  meetTheTeamUrl = '/our-team';
+  aboutUsUrl = '/about-us';
   seeAllPostsUrl = '/insights';
   contactUrl = '/contact';
   osBankingUrl = '/open-source-banking';
   frontendAutomationUrl = '/front-end-testing-automation';
 
-  constructor() { }
+  constructor(private titleService: Title) { }
 
   ngOnInit() {
-    $('.button__watch-video').on('click', e => {
-      e.preventDefault();
-      $('.video-container').addClass('show');
+    this.titleService.setTitle('Aicura Solutions');
+
+    const watchVideoBtn = document.getElementsByClassName('button__watch-video');
+    const videoContainer = document.getElementsByClassName('video-container');
+    const iframe = document.getElementsByTagName('iframe');
+
+    watchVideoBtn[0].addEventListener('click', event => {
+      event.preventDefault();
+      videoContainer[0].className += ' show';
     });
 
-    $('.video-container').on('click', e => {
-      e.preventDefault();
-      e.stopPropagation();
-      $('.video-container').removeClass('show');
+    videoContainer[0].addEventListener('click', event => {
+      event.preventDefault();
+      event.stopPropagation();
+      videoContainer[0].classList.remove('show');
     });
 
-    $('iframe').on('click', e => {
-      e.stopPropagation();
+    iframe[0].addEventListener('click', event => {
+      event.stopPropagation();
     });
+
   }
 
 }
