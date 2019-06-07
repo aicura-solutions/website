@@ -10,6 +10,7 @@ import { ComingSoonComponent } from "./coming-soon/coming-soon.component";
 import { OpenSourceBankingComponent } from "./open-source-banking/open-source-banking.component";
 import { FrontEndAutomationComponent } from "./front-end-automation/front-end-automation.component";
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
+import { ServicesPageComponent } from './services-page/services-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent, pathMatch: 'full' },
@@ -19,9 +20,9 @@ const routes: Routes = [
   { path: 'community-projects', component: ComingSoonComponent },
   { path: 'open-source-banking', component: OpenSourceBankingComponent },
   { path: 'front-end-testing-automation', component: FrontEndAutomationComponent },
-  { path: 'services', component: ComingSoonComponent },
   { path: 'our-team', component: ComingSoonComponent },
   { path: 'about-us', component: AboutUsPageComponent },
+  { path: 'services', component: ServicesPageComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
