@@ -18,6 +18,7 @@ import { FrontEndAutomationComponent } from './front-end-automation/front-end-au
 import { NavigationToggleComponent } from './navigation-toggle/navigation-toggle.component';
 import { NavigationToggleWhiteComponent } from './navigation-toggle-white/navigation-toggle-white.component';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
+import { ServicesPageComponent } from './services-page/services-page.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
     FrontEndAutomationComponent,
     NavigationToggleComponent,
     NavigationToggleWhiteComponent,
-    AboutUsPageComponent
+    AboutUsPageComponent,
+    ServicesPageComponent
   ],
   imports: [
     BrowserModule,
