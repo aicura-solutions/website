@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
   duckUrl = 'assets/img/aicura-duck.png';
+  teethUrl = 'assets/img/aicura-teeth.png';
 
   constructor() { }
 

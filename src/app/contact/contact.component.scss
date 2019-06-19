@@ -1,328 +1,393 @@
 @import '../../assets/styles/_consts';
 
 .grid-container {
-  width: 100%;
-  height: 100%;
-  display: grid;
-
-  .grid-container-sub-1 {
-    display: grid;
-    height: 400px;
-    color: #fff;
-    @include happyOrangeGradient;
-    grid-template-rows: 100%;
-
-    @media screen and (max-width: $extraLargeBreakpoint) {
-      grid-template-columns: auto 80% auto;
-    }
-
-    @media screen and (min-width: $extraLargeBreakpoint) {
-      grid-template-columns: auto 570px 570px auto;
-    }
-
-  }
-
-  .grid-item-1 {
-    color: #fff;
-    grid-column: 2 / 3;
-    grid-row: 1;
-    padding-top: 150px;
-
-    h1 {
-      font-weight: lighter;
-      font-size: 3rem;
-    }
-
-  }
-
-  .grid-item-2 {
-    grid-row: 1;
-
-    @media screen and (min-width: $extraLargeBreakpoint) {
-      height: 100%;
-      grid-column: 3 / 4;
-    }
-
-  }
-
-  .grid-container-sub-2 {
-    display: grid;
-    
-    @media screen and (max-width: $mediumBreakpoint) {
-      grid-template-columns: auto 96% auto;
-      grid-template-rows: 300px 500px 250px 100px 200px;
-    }
-
-    @media screen and (min-width: $mediumBreakpoint) {
-      grid-template-columns: auto 48% 48% auto;
-      grid-template-rows: 250px 550px 150px;
-    }
-
-    @media screen and (min-width: $largeBreakpoint) {
-      grid-template-columns: auto 450px 450px auto;
-      grid-template-rows: 250px 550px 150px;
-    }
-
-    @media screen and (min-width: $extraLargeBreakpoint) {
-      grid-template-columns: auto 570px 570px auto;
-      grid-template-rows: 250px 650px 150px;
-      height: 100%;
-    }
-  }
-
-  .grid-item-5 {
-    grid-row: 1;
-    padding-left: 20px;
-    padding-right: 20px;
-
-    @media screen and (max-width: $mediumBreakpoint) {
-      grid-column: 2 / 3;
-      padding-top: 50px;
-    }
-
-    @media screen and (min-width: $mediumBreakpoint) {
-      grid-column: 2 / 4;
-      padding-top: 100px;
-    }
-
-    @media screen and (min-width: $extraLargeBreakpoint) {
-      padding-right: 20%;
-    }
-
-    h2 {
-      font-size: 2rem;
-      font-weight: lighter;
-    }
-
-  }
-
-  .grid-item-3 {
+    width: 100%;
     height: 100%;
-    grid-column: 2 / 3;
-    grid-row: 2;
-    padding: 0 20px;
-  }
+    display: grid;
 
-  .grid-item-4 {
-    height: 100%;
-    grid-column: 3 / 4;
-    grid-row: 2;
-    padding: 0 20px;
-
-    @media screen and (max-width: $mediumBreakpoint) {
-      grid-column: 2 / 3;
-      grid-row: 3;
-      padding: 0 20px;
-    }
-
-    @media screen and (min-width: $mediumBreakpoint) {
-      grid-column: 3 / 4;
-      grid-row: 2;
-      padding: 0 20px;
-    }
-
-    .contact-card {
-      background: $chilledOutBlue;
-      width: 80%;
-      height: 200px;
-      border-radius: 10px;
-      -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
-      color: #fff;
-
-      @media screen and (max-width: $mediumBreakpoint) {
-        width: 100%;
-      }
-
-      @media screen and (min-width: $mediumBreakpoint) {
-        width: 80%;
-        margin: 0 10%;
-        margin-top: 120px;
-      }
-
-      @media screen and (min-width: $largeBreakpoint) {
-        margin: 0 20%;
-        margin-top: 120px;
-      }
-
-
-      ul {
-        height: 100%;
-        list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+    .grid-container-sub-1 {
+        display: grid;
+        @include happyOrangeGradient;
+        color: #fff;
+        grid-template-rows: 400px;
 
         @media screen and (max-width: $mediumBreakpoint) {
-          margin: 0;
-          padding: 0 20px;
-        }   
+            grid-template-columns: auto 48% 48% auto;
+        }
 
         @media screen and (min-width: $mediumBreakpoint) {
-          width: 90%;
-          margin: 0 5%;
-          padding: 0;
-        }      
-        
+            grid-template-columns: auto 48% 48% auto;
+        }
+
         @media screen and (min-width: $largeBreakpoint) {
-          width: 90%;
-          margin: 0 5%;
-          padding: 0;
+            grid-template-columns: auto 450px 450px auto;
         }
 
         @media screen and (min-width: $extraLargeBreakpoint) {
-          text-align: left;
+            grid-template-columns: auto 570px 570px auto;
         }
 
-        li {
-          
-          @media screen and (max-width: $mediumBreakpoint) {
-            font-size: 1.2rem;
+    }
+
+    .grid-item-1 {
+        color: #fff;
+        grid-column: 2 / 3;
+        grid-row: 1;
+        padding-top: 150px;
+
+        @media screen and (max-width: $smallBreakpoint) {
+            padding-top: 100px;
+        }
+
+        h1 {
+            font-weight: lighter;
+            font-size: 3rem;
+        }
+
+        .h1--small {
+            font-weight: lighter;
+            font-size: 2rem;
+        }
+
+    }
+
+    .grid-item-2 {
+        grid-column: 3 / 4;
+        grid-row: 1;
+
+        @media screen and (max-width: $smallBreakpoint) {
             text-align: center;
-          }
+        }
 
-          @media screen and (min-width: $mediumBreakpoint) {
-            font-size: 1.2rem;
-            text-align: left;
-            padding-left: 10px;
-          }
+        .img--aicura-teeth {
+            width: auto;
 
-          @media screen and (min-width: $largeBreakpoint) {
-            font-size: 1.2rem;
-            text-align: left;
-            padding-left: 10px;
-          }
+            @media screen and (max-width: $smallBreakpoint) {
+                height: 140px;
+                margin-top: 250px;
+                margin-left: -40px;
+            }
 
-          @media screen and (min-width: $extraLargeBreakpoint) {
-            font-size: 1.4rem;
-          }
+            @media screen and (min-width: $smallBreakpoint) {
+                height: 200px;
+                margin-top: 130px;
+            }
 
-          i {
-            margin-right: 10px;
-          }
+            @media screen and (min-width: $mediumBreakpoint) {
+                height: 250px;
+                margin-top: 110px;
+            }
+
+            @media screen and (min-width: $largeBreakpoint) {
+                height: 280px;
+                margin-top: 90px;
+            }
+
+            @media screen and (min-width: $extraLargeBreakpoint) {
+                height: 300px;
+                margin-top: 90px;
+            }
 
         }
 
-      }
-
-    }
-  }
-
-  .grid-item-6 {
-    text-align: center;
-
-    @media screen and (max-width: $mediumBreakpoint) {
-      grid-column: 2 / 3;
-      grid-row: 4;
     }
 
-    @media screen and (min-width: $mediumBreakpoint) {
-      grid-column: 2 / 3;
-      grid-row: 3;
+    .grid-container-sub-2 {
+        display: grid;
+
+        @media screen and (max-width: $mediumBreakpoint) {
+            grid-template-columns: auto 96% auto;
+            grid-template-rows: auto auto auto 100px 200px;
+        }
+
+        @media screen and (min-width: $mediumBreakpoint) {
+            grid-template-columns: auto 48% 48% auto;
+            grid-template-rows: 250px 550px 150px;
+        }
+
+        @media screen and (min-width: $largeBreakpoint) {
+            grid-template-columns: auto 450px 450px auto;
+            grid-template-rows: 250px 550px 150px;
+        }
+
+        @media screen and (min-width: $extraLargeBreakpoint) {
+            grid-template-columns: auto 570px 570px auto;
+            grid-template-rows: 250px 450px 150px;
+            height: 100%;
+        }
     }
 
-    @media screen and (min-width: $largeBreakpoint) {
-      grid-column: 2 / 3;
-      grid-row: 3;
-      padding-top: 30px;
-    }
+    .grid-item-5 {
+        grid-row: 1;
+        padding-left: 20px;
+        padding-right: 20px;
 
-    > h2 {
-      color: $happyOrange;
-    }
+        @media screen and (max-width: $mediumBreakpoint) {
+            grid-column: 2 / 3;
+            padding-top: 50px;
+            text-align: center;
+        }
 
-  }
+        @media screen and (min-width: $mediumBreakpoint) {
+            grid-column: 2 / 4;
+            padding-top: 100px;
+        }
 
-  .grid-item-7 {
-    width: 100%;
-    height: 100%;
+        @media screen and (min-width: $extraLargeBreakpoint) {
+            padding-right: 20%;
+        }
 
-    @media screen and (max-width: $mediumBreakpoint) {
-      grid-column: 2 / 3;
-      grid-row: 5;
-      text-align: center;
-    }
+        h2 {
+            font-size: 2rem;
+            font-weight: lighter;
+        }
 
-    @media screen and (min-width: $mediumBreakpoint) {
-      grid-column: 3 / 4;
-      grid-row: 3;
-      text-align: right;
-    }
-
-    .image--duck {
-      height: 200px;
-      width: auto;
-      z-index: 1;
-    
-      @media screen and (max-width: $mediumBreakpoint) {
-        margin-top: 60px;
-      }
-    
-      @media screen and (min-width: $mediumBreakpoint) {
-        margin-top: 10px;
-      }
-    
-      @media screen and (min-width: $largeBreakpoint) {
-        margin-top: 10px;
-      }
-    
-      @media screen and (min-width: $extraLargeBreakpoint) {
-        height: 250px;
-        margin-top: -40px;
-        margin-right: 100px;
-      }
+        @media screen and (width: $mediumBreakpoint) {
+            text-align: left;
+        }
 
     }
 
-  }
+    .grid-item-3 {
+        height: 100%;
+        grid-column: 2 / 3;
+        grid-row: 2;
+        padding: 0 20px;
 
-  .contact-form > p {
-    font-size: 1.5rem;
-    font-weight: lighter;
-    margin-bottom: 10px;
-  }
+        @media screen and (max-width: $mediumBreakpoint) {
+            grid-row: 3;
+        }
 
-  .contact-form > input {
-    width: 100%;
-    height: 35px;
-    font-size: 1.3rem;
-    border-radius: 10px;
-    border: 1px solid #666666ab;
-  }
+        @media screen and (width: $mediumBreakpoint) {
+            grid-row: 2;
+        }
 
-  .contact-form > textarea {
-    width: 100%;
-    margin-bottom: 20px;
-    font-size: 1.3rem;
-    border-radius: 10px;
-    border: 1px solid #666666ab;
-    padding: 0;
-  }
+        input[type="submit"] {
+            border-radius: 20px;
+        }
 
-  .contact-form > input[type='submit'] {
-    border: none;
-    width: 30%;
-    margin: 0 35%;
-  }
-
-  .blue-waves {
-    overflow: hidden;
-    z-index: -1;
-    position: relative;
-    top: 10px;
-
-    path {
-      stroke: #1499d6;
-      stroke-width: 5px;
-      fill: #1499d6;
     }
 
-    svg {
-      height: 70px;
-      width: 4000px;
+    .grid-item-4 {
+        height: 100%;
+        grid-column: 3 / 4;
+        grid-row: 2;
+        padding: 0 20px;
+
+        @media screen and (max-width: $mediumBreakpoint) {
+            grid-column: 2 / 3;
+            grid-row: 2;
+            padding: 0 20px;
+        }
+
+        @media screen and (min-width: $mediumBreakpoint) {
+            grid-column: 3 / 4;
+            grid-row: 2;
+            padding: 0 20px;
+        }
+
+        .contact-card {
+            background: $chilledOutBlue;
+            width: 80%;
+            height: 200px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.5);
+            color: #fff;
+
+            @media screen and (max-width: $mediumBreakpoint) {
+                width: 100%;
+            }
+
+            @media screen and (min-width: $mediumBreakpoint) {
+                width: 80%;
+                margin: 0 10%;
+                margin-top: 120px;
+            }
+
+            @media screen and (min-width: $largeBreakpoint) {
+                margin: 0 20%;
+                margin-top: 120px;
+            }
+
+
+            ul {
+                height: 100%;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+
+                @media screen and (max-width: $mediumBreakpoint) {
+                    margin: 0;
+                    padding: 0 20px;
+                }
+
+                @media screen and (min-width: $mediumBreakpoint) {
+                    width: 90%;
+                    margin: 0 5%;
+                    padding: 0;
+                }
+
+                @media screen and (min-width: $largeBreakpoint) {
+                    width: 90%;
+                    margin: 0 5%;
+                    padding: 0;
+                }
+
+                @media screen and (min-width: $extraLargeBreakpoint) {
+                    text-align: left;
+                }
+
+                li {
+
+                    @media screen and (max-width: $mediumBreakpoint) {
+                        font-size: 1.2rem;
+                        text-align: center;
+                    }
+
+                    @media screen and (min-width: $mediumBreakpoint) {
+                        font-size: 1.2rem;
+                        text-align: left;
+                        padding-left: 10px;
+                    }
+
+                    @media screen and (min-width: $largeBreakpoint) {
+                        font-size: 1.2rem;
+                        text-align: left;
+                        padding-left: 10px;
+                    }
+
+                    @media screen and (min-width: $extraLargeBreakpoint) {
+                        font-size: 1.4rem;
+                    }
+
+                    i {
+                        margin-right: 10px;
+                    }
+
+                }
+
+            }
+
+        }
     }
 
-  }
+    .grid-item-6 {
+        text-align: center;
+
+        @media screen and (max-width: $mediumBreakpoint) {
+            grid-column: 2 / 3;
+            grid-row: 4;
+        }
+
+        @media screen and (min-width: $mediumBreakpoint) {
+            grid-column: 2 / 3;
+            grid-row: 3;
+        }
+
+        @media screen and (min-width: $largeBreakpoint) {
+            grid-column: 2 / 3;
+            grid-row: 3;
+            padding-top: 30px;
+        }
+
+        >h2 {
+            color: $happyOrange;
+        }
+
+    }
+
+    .grid-item-7 {
+        width: 100%;
+        height: 100%;
+
+        @media screen and (max-width: $mediumBreakpoint) {
+            grid-column: 2 / 3;
+            grid-row: 5;
+            text-align: center;
+        }
+
+        @media screen and (min-width: $mediumBreakpoint) {
+            grid-column: 3 / 4;
+            grid-row: 3;
+            text-align: right;
+        }
+
+        .image--duck {
+            height: 200px;
+            width: auto;
+            z-index: 1;
+
+            @media screen and (max-width: $mediumBreakpoint) {
+                margin-top: 60px;
+            }
+
+            @media screen and (min-width: $mediumBreakpoint) {
+                margin-top: 10px;
+            }
+
+            @media screen and (min-width: $largeBreakpoint) {
+                margin-top: 10px;
+            }
+
+            @media screen and (min-width: $extraLargeBreakpoint) {
+                height: 250px;
+                margin-top: -40px;
+                margin-right: 100px;
+            }
+
+        }
+
+    }
+
+    .contact-form>p {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        margin-bottom: 10px;
+    }
+
+    .contact-form>input {
+        width: 100%;
+        height: 35px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        border: 1px solid #666666ab;
+    }
+
+    .contact-form>textarea {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        border-radius: 10px;
+        border: 1px solid #666666ab;
+        padding: 0;
+    }
+
+    .contact-form>input[type='submit'] {
+        border: none;
+        width: 30%;
+        margin: 0 35%;
+    }
+
+    .blue-waves {
+        overflow: hidden;
+        z-index: -1;
+        position: relative;
+        top: 10px;
+
+        path {
+            stroke: #1499d6;
+            stroke-width: 5px;
+            fill: #1499d6;
+        }
+
+        svg {
+            height: 70px;
+            width: 4000px;
+        }
+
+    }
 
 }
