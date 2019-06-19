@@ -19,6 +19,7 @@ import { NavigationToggleComponent } from './navigation-toggle/navigation-toggle
 import { NavigationToggleWhiteComponent } from './navigation-toggle-white/navigation-toggle-white.component';
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { ServicesPageComponent } from './services-page/services-page.component';
+import { DuckoffPageComponent } from './duckoff-page/duckoff-page.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ServicesPageComponent } from './services-page/services-page.component';
     NavigationToggleComponent,
     NavigationToggleWhiteComponent,
     AboutUsPageComponent,
-    ServicesPageComponent
+    ServicesPageComponent,
+    DuckoffPageComponent
   ],
   imports: [
     BrowserModule,

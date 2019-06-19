@@ -11,6 +11,7 @@ import { OpenSourceBankingComponent } from "./open-source-banking/open-source-ba
 import { FrontEndAutomationComponent } from "./front-end-automation/front-end-automation.component";
 import { AboutUsPageComponent } from './about-us-page/about-us-page.component';
 import { ServicesPageComponent } from './services-page/services-page.component';
+import { DuckoffPageComponent } from './duckoff-page/duckoff-page.component';
 
 const routes: Routes = [
   { path: '', component: HomePageComponent, pathMatch: 'full' },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'our-team', component: ComingSoonComponent },
   { path: 'about-us', component: AboutUsPageComponent },
   { path: 'services', component: ServicesPageComponent },
+  { path: 'duckoff', component: DuckoffPageComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
