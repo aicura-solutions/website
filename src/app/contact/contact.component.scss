@@ -1,4 +1,4 @@
-@import "../../assets/styles/_consts";
+@import '../../assets/styles/_consts';
 
 .grid-container {
   width: 100%;
@@ -157,7 +157,7 @@
       grid-row: 2;
     }
 
-    input[type="submit"] {
+    input[type='submit'] {
       border-radius: 20px;
     }
   }
@@ -282,7 +282,7 @@
       padding-top: 30px;
     }
 
-    > h2 {
+    >h2 {
       color: $happyOrange;
     }
   }
@@ -328,13 +328,13 @@
     }
   }
 
-  .contact-form > p {
+  .contact-form>p {
     font-size: 1.5rem;
     font-weight: lighter;
     margin-bottom: 10px;
   }
 
-  .contact-form > input {
+  .contact-form>input {
     width: 100%;
     height: 35px;
     font-size: 1.3rem;
@@ -342,7 +342,7 @@
     border: 1px solid #666666ab;
   }
 
-  .contact-form > textarea {
+  .contact-form>textarea {
     width: 100%;
     margin-bottom: 20px;
     font-size: 1.3rem;
@@ -351,7 +351,7 @@
     padding: 0;
   }
 
-  .contact-form > input[type="submit"] {
+  .contact-form>input[type='submit'] {
     border: none;
     width: 30%;
     margin: 0 35%;

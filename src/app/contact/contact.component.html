@@ -15,18 +15,11 @@
   <div class="grid-container-sub-2">
     <div class="grid-item-5">
       <h2>
-        Drop us a line, send us an email or pick up the phone.<br
-          class="keep"
-        />We look forward to hearing from you.
+        Drop us a line, send us an email or pick up the phone.<br class="keep" />We look forward to hearing from you.
       </h2>
     </div>
     <div class="grid-item-3">
-      <form
-        class="contact-form"
-        action="#"
-        [formGroup]="contactForm"
-        (ngSubmit)="submitForm()"
-      >
+      <form class="contact-form" action="#" [formGroup]="contactForm" (ngSubmit)="submitForm()">
         <!-- Name -->
         <p>Name</p>
         <label for="name">Name</label>
@@ -35,58 +28,20 @@
         <!-- Email -->
         <p>E-mail address</p>
         <label for="email">Email</label>
-        <input
-          type="email"
-          name="email"
-          minlength="2"
-          email
-          formControlName="email"
-          required
-        />
+        <input type="email" name="email" minlength="2" email formControlName="email" required />
 
         <!-- Message -->
         <p>What's shakin'?</p>
         <label for="message">Your message</label>
-        <textarea
-          name="message"
-          rows="4"
-          formControlName="message"
-          required
-        ></textarea>
+        <textarea name="message" rows="4" formControlName="message" required></textarea>
         <label class="potdemiel" for="name"></label>
-        <input
-          class="potdemiel"
-          autocomplete="new-password"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your name here"
-        />
+        <input class="potdemiel" autocomplete="new-password" type="text" id="name" name="name" placeholder="Your name here" />
         <label class="potdemiel" for="email"></label>
-        <input
-          class="potdemiel"
-          autocomplete="new-password"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your email here"
-        />
+        <input class="potdemiel" autocomplete="new-password" type="email" id="email" name="email" placeholder="Your email here" />
         <label class="potdemiel" for="message"></label>
-        <input
-          class="potdemiel"
-          autocomplete="new-password"
-          type="text"
-          id="message"
-          name="message"
-          placeholder="Your message here"
-        />
+        <input class="potdemiel" autocomplete="new-password" type="text" id="message" name="message" placeholder="Your message here" />
 
-        <button
-          type="submit"
-          class="button__orange-gradient"
-          value="submit"
-          ng-disabled="bdisabled"
-        >
+        <button type="submit" class="button__orange-gradient" value="submit" ng-disabled="bdisabled">
           Submit
         </button>
       </form>
@@ -107,9 +62,7 @@
 
   <div class="blue-waves">
     <svg>
-      <path
-        d="M 0 18 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0  l 0 50 l -880 200000 z"
-      />
+      <path d="M 0 18 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0  l 0 50 l -880 200000 z" />
       zw
     </svg>
   </div>
