@@ -1,5 +1,4 @@
 <div class="grid-container">
-
   <app-aicura-logo-white></app-aicura-logo-white>
   <app-navigation-toggle-white></app-navigation-toggle-white>
 
@@ -9,24 +8,87 @@
       <h1 class="h1--small">We love a chat</h1>
     </div>
     <div class="grid-item-2">
-      <img src="{{ teethUrl }}" alt="aicura-teeth" class="img--aicura-teeth">
+      <img src="{{ teethUrl }}" alt="aicura-teeth" class="img--aicura-teeth" />
     </div>
   </div>
 
   <div class="grid-container-sub-2">
     <div class="grid-item-5">
-      <h2>Drop us a line, send us an email or pick up the phone.<br class="keep">We look forward to hearing from you.
+      <h2>
+        Drop us a line, send us an email or pick up the phone.<br
+          class="keep"
+        />We look forward to hearing from you.
       </h2>
     </div>
     <div class="grid-item-3">
-      <form class="contact-form" action="" method="POST">
+      <form
+        class="contact-form"
+        action="#"
+        [formGroup]="contactForm"
+        (ngSubmit)="submitForm()"
+      >
+        <!-- Name -->
         <p>Name</p>
-        <input type="text" name="name">
+        <label for="name">Name</label>
+        <input type="text" name="name" formControlName="name" required />
+
+        <!-- Email -->
         <p>E-mail address</p>
-        <input type="email" name="email">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          minlength="2"
+          email
+          formControlName="email"
+          required
+        />
+
+        <!-- Message -->
         <p>What's shakin'?</p>
-        <textarea name="message" rows="5"></textarea>
-        <input type="submit" class="button__orange-gradient" value="Submit">
+        <label for="message">Your message</label>
+        <textarea
+          name="message"
+          rows="4"
+          formControlName="message"
+          required
+        ></textarea>
+        <label class="potdemiel" for="name"></label>
+        <input
+          class="potdemiel"
+          autocomplete="new-password"
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Your name here"
+        />
+        <label class="potdemiel" for="email"></label>
+        <input
+          class="potdemiel"
+          autocomplete="new-password"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your email here"
+        />
+        <label class="potdemiel" for="message"></label>
+        <input
+          class="potdemiel"
+          autocomplete="new-password"
+          type="text"
+          id="message"
+          name="message"
+          placeholder="Your message here"
+        />
+
+        <button
+          type="submit"
+          class="button__orange-gradient"
+          value="submit"
+          ng-disabled="bdisabled"
+        >
+          Submit
+        </button>
       </form>
     </div>
     <div class="grid-item-4">
@@ -37,18 +99,17 @@
         </ul>
       </div>
     </div>
-    <div class="grid-item-6">
-    </div>
+    <div class="grid-item-6"></div>
     <div class="grid-item-7">
-      <img class="image--duck" src="{{ duckUrl }}" alt="aicura-duck-image">
+      <img class="image--duck" src="{{ duckUrl }}" alt="aicura-duck-image" />
     </div>
   </div>
-
 
   <div class="blue-waves">
     <svg>
       <path
-        d="M 0 18 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0  l 0 50 l -880 200000 z" />
+        d="M 0 18 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0  l 0 50 l -880 200000 z"
+      />
       zw
     </svg>
   </div>
