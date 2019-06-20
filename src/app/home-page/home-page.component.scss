@@ -253,7 +253,7 @@
                 }
 
                 @media screen and (min-width: $mediumBreakpoint) {
-                    padding: 8px 50px;
+                    padding: 8px 100px;
                 }
 
             }
@@ -1575,6 +1575,11 @@
 
         .button__see-all-posts {
             margin-top: 20px;
+
+            @media screen and (min-width: $largeBreakpoint) {
+                width: 100%;
+            }
+
         }
 
     }
