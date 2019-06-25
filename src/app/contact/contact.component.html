@@ -5,13 +5,17 @@
   <div class="grid-container-sub-1">
     <div class="grid-item-1">
       <h1>Contact Us</h1>
+      <h1 class="sub-heading">We love a chat</h1>
     </div>
-    <div class="grid-item-2"></div>
+    <div class="grid-item-2">
+      <img src="{{ teethUrl }}" alt="aicura-teeth" class="img--aicura-teeth">
+    </div>
   </div>
 
   <div class="grid-container-sub-2">
     <div class="grid-item-5">
-      <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h2>
+      <h2>Drop us a line, send us an email or pick up the phone.<br class="keep">We look forward to hearing from you.
+      </h2>
     </div>
     <div class="grid-item-3">
       <!-- <form class="contact-form" action="" method="POST">
@@ -23,75 +27,32 @@
         <textarea name="message" rows="4"></textarea>
         <input type="submit" class="button__orange-gradient" value="Submit">
       </form> -->
-      <form
-        class="contact-form"
-        action="#"
-        [formGroup]="contactForm"
-        (ngSubmit)="submitForm()"
-      >
+      <form class="contact-form" action="#" [formGroup]="contactForm" (ngSubmit)="submitForm()">
         <!-- Name -->
         <p>Name</p>
-        <label for="nameaksljf">Name</label>
         <input type="text" name="nameaksljf" formControlName="name" required />
 
         <!-- Email -->
         <p>E-mail address</p>
-        <label for="emailaksljf">Email</label>
-        <input
-          type="email"
-          name="emailaksljf"
-          minlength="2"
-          email
-          formControlName="email"
-          required
-        />
+        <input type="email" name="emailaksljf" minlength="2" email formControlName="email" required />
 
         <!-- Message -->
         <p>What's shakin'?</p>
-        <label for="messageaksljf">Your message</label>
-        <textarea
-          name="messageaksljf"
-          rows="4"
-          formControlName="message"
-          required
-        ></textarea>
+        <textarea name="messageaksljf" rows="4" formControlName="message" required></textarea>
 
         <!-- HP -->
 
         <label class="potdemiel" for="name"></label>
-        <input
-          class="potdemiel"
-          autocomplete="new-password"
-          type="text"
-          id="name"
-          name="name"
-          placeholder="Your name here"
-        />
+        <input class="potdemiel" autocomplete="new-password" type="text" id="name" name="name"
+          placeholder="Your name here" />
         <label class="potdemiel" for="email"></label>
-        <input
-          class="potdemiel"
-          autocomplete="new-password"
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Your email here"
-        />
+        <input class="potdemiel" autocomplete="new-password" type="email" id="email" name="email"
+          placeholder="Your email here" />
         <label class="potdemiel" for="message"></label>
-        <input
-          class="potdemiel"
-          autocomplete="new-password"
-          type="text"
-          id="message"
-          name="message"
-          placeholder="Your message here"
-        />
+        <input class="potdemiel" autocomplete="new-password" type="text" id="message" name="message"
+          placeholder="Your message here" />
 
-        <button
-          type="submit"
-          class="button__orange-gradient"
-          value="submit"
-          ng-disabled="bdisabled"
-        >
+        <button type="submit" class="button__orange-gradient" value="submit" ng-disabled="bdisabled">
           Submit
         </button>
       </form>
@@ -104,12 +65,7 @@
         </ul>
       </div>
     </div>
-    <div class="grid-item-6">
-      <h2 class="padding-10">
-        Tricky tech issues?<br class="keep" />
-        We love a challenge, so get in touch.
-      </h2>
-    </div>
+    <div class="grid-item-6"></div>
     <div class="grid-item-7">
       <img class="image--duck" src="{{ duckUrl }}" alt="aicura-duck-image" />
     </div>
@@ -118,8 +74,7 @@
   <div class="blue-waves">
     <svg>
       <path
-        d="M 0 18 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0  l 0 50 l -880 200000 z"
-      />
+        d="M 0 18 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0 q 40 -30 80 0 q 40 40 80 0  l 0 50 l -880 200000 z" />
       zw
     </svg>
   </div>
