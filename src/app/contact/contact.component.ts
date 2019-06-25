@@ -59,7 +59,7 @@ export class ContactComponent implements OnInit {
 
     this.http
       .post(
-        'https://us-central1-aicura-contact-form.cloudfunctions.net/http',
+        'https://europe-west2-aicu-websrv-prod.cloudfunctions.net/http',
         contactData
       )
       .subscribe(
