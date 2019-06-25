@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
+
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-contact',
@@ -8,12 +10,39 @@ import { Title } from '@angular/platform-browser';
 })
 export class ContactComponent implements OnInit {
   duckUrl = 'assets/img/aicura-duck.png';
+  contactForm: FormGroup;
 
-  constructor(title: Title) {
-    title.setTitle('Contact');
+  constructor(private form: FormBuilder, private http: HttpClient) {}
+
+  public ngOnInit(): void {
+    this.contactForm = new FormGroup({
+      name: new FormControl(),
+      email: new FormControl(),
+      message: new FormControl()
+    });
   }
 
-  ngOnInit() {
-  }
+  public submitForm() {
+    const contactData = this.contactForm.getRawValue();
 
+    this.http
+      .post(
+        'https://us-central1-aicura-contact-form.cloudfunctions.net/http',
+        contactData
+      )
+      .subscribe(
+        res => {
+          console.log(res);
+        },
+        err => {
+          console.log(err);
+          console.log('This is general error: ' + err.error);
+          console.log('This is name error: ' + err.name);
+          console.log('This is email error: ' + err.email);
+          console.log('This is message error: ' + err.message);
+          console.log('This is status error: ' + err.status);
+        }
+      );
+    console.log(contactData);
+  }
 }
