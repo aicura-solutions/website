@@ -170,7 +170,17 @@
 
             input,
             textarea {
-                padding: 5px;
+                padding: 5px 10px;
+                outline: none;
+            }
+
+            input {
+                margin-bottom: 4px;
+            }
+
+            textarea {
+                margin-bottom: 0;
+                padding: 10px;
             }
 
             .potdemiel {
@@ -188,6 +198,7 @@
         .button__orange-gradient {
             width: 50%;
             margin: 0 25%;
+            margin-top: 20px;
         }
 
     }
