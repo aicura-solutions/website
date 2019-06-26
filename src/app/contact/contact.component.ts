@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
-  FormControl,
   Validators,
   FormGroupDirective
 } from '@angular/forms';
@@ -20,17 +19,12 @@ export class ContactComponent implements OnInit {
   teethUrl = 'assets/img/aicura-teeth.png';
   contactForm: FormGroup;
   formRef: FormGroupDirective;
-  submitted = false;
 
-  constructor(
-    private form: FormBuilder,
-    private http: HttpClient,
-    title: Title
-  ) {
+  constructor(private form: FormBuilder, private http: HttpClient, title: Title) {
     title.setTitle('Contact Us');
   }
 
-  public ngOnInit(): void {
+  ngOnInit() {
     this.contactForm = this.form.group({
       name: [undefined, [Validators.required]],
       email: [undefined, [Validators.required, Validators.email]],
@@ -42,21 +36,15 @@ export class ContactComponent implements OnInit {
     return this.contactForm.controls;
   }
 
+  alert(message: string) {
+    window.alert(message);
+  }
+
   public submitForm() {
     const contactData = this.contactForm.getRawValue();
-    this.submitted = true;
-
     // stop here if form is invalid
     if (this.contactForm.invalid) {
       return;
-    }
-
-    if (this.submitted) {
-      this.contactForm = this.form.group({
-        name: [undefined],
-        email: [undefined],
-        message: [undefined]
-      });
     }
 
     this.http
@@ -66,10 +54,17 @@ export class ContactComponent implements OnInit {
       )
       .subscribe(
         res => {
-          console.log(res);
+          alert(`Your message has been submitted- we'll be in touch soon!`);
+          window.location.reload();
         },
         err => {
-          console.log(err);
+          if (err.status == 200) {
+            alert(`Your message has been submitted- we'll be in touch soon!`);
+            window.location.reload();
+          } else {
+            alert('There was a problem submitting your message, please try again.');
+            console.log(err);
+          }
         }
       );
   }
