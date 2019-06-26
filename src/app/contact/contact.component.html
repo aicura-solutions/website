@@ -23,8 +23,7 @@
         <!-- Name -->
         <p>Name</p>
         <!-- <input type="text" formControlName="name" /> -->
-        <input type="text" name="nameaksljf" formControlName="name"
-          [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+        <input type="text" name="nameaksljf" formControlName="name" [ngClass]="{ 'is-invalid': f.name.errors }" />
         <div *ngIf="f.name.errors">
           <div *ngIf="f.name.errors.required">Name is required</div>
         </div>
@@ -32,8 +31,7 @@
         <!-- Email -->
         <p>E-mail address</p>
 
-        <input type="text" name="emailaksljf" formControlName="email"
-          [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+        <input type="text" name="emailaksljf" formControlName="email" [ngClass]="{ 'is-invalid': f.email.errors }" />
         <div *ngIf="f.email.errors">
           <div *ngIf="f.email.errors.required">Email is required</div>
           <div *ngIf="f.email.errors.email">
@@ -44,7 +42,7 @@
         <!-- Message -->
         <p>What's shakin'?</p>
         <textarea name="messageaksljf" rows="4" formControlName="message"
-          [ngClass]="{ 'is-invalid': submitted && f.message.errors }"></textarea>
+          [ngClass]="{ 'is-invalid': f.message.errors }"></textarea>
         <div *ngIf="f.message.errors">
           <div *ngIf="f.message.errors.required">Message is required</div>
         </div>
