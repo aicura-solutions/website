@@ -3,7 +3,8 @@ import {
   FormBuilder,
   FormGroup,
   FormControl,
-  Validators
+  Validators,
+  FormGroupDirective
 } from '@angular/forms';
 
 import { HttpClient } from '@angular/common/http';
@@ -18,6 +19,7 @@ export class ContactComponent implements OnInit {
   duckUrl = 'assets/img/aicura-duck.png';
   teethUrl = 'assets/img/aicura-teeth.png';
   contactForm: FormGroup;
+  formRef: FormGroupDirective;
   submitted = false;
 
   constructor(
@@ -27,14 +29,6 @@ export class ContactComponent implements OnInit {
   ) {
     title.setTitle('Contact Us');
   }
-
-  // public ngOnInit(): void {
-  //   this.contactForm = new FormGroup({
-  //     name: new FormControl(),
-  //     email: new FormControl(),
-  //     message: new FormControl()
-  //   });
-  // }
 
   public ngOnInit(): void {
     this.contactForm = this.form.group({
@@ -55,6 +49,14 @@ export class ContactComponent implements OnInit {
     // stop here if form is invalid
     if (this.contactForm.invalid) {
       return;
+    }
+
+    if (this.submitted) {
+      this.contactForm = this.form.group({
+        name: [undefined],
+        email: [undefined],
+        message: [undefined]
+      });
     }
 
     this.http
