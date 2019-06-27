@@ -27,7 +27,6 @@ export class HomePageComponent implements OnInit {
   tsbUrl = 'assets/img/brands/tsb-logo.svg';
   wongaUrl = 'assets/img/brands/wonga-logo.svg';
 
-  meetTheTeamUrl = '/our-team';
   aboutUsUrl = '/about-us';
   seeAllPostsUrl = '/insights';
   contactUrl = '/contact';

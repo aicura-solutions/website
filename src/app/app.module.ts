@@ -1,12 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AicuraLogoOrangeComponent } from './aicura-logo-orange/aicura-logo-orange.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomePageComponent } from './home-page/home-page.component';
-import { MeetTheTeamComponent } from './meet-the-team/meet-the-team.component';
 import { AicuraLogoWhiteComponent } from './aicura-logo-white/aicura-logo-white.component';
 import { InsightsComponent } from './insights/insights.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -26,7 +27,6 @@ import { ServicesPageComponent } from './services-page/services-page.component';
     AicuraLogoOrangeComponent,
     FooterComponent,
     HomePageComponent,
-    MeetTheTeamComponent,
     AicuraLogoWhiteComponent,
     InsightsComponent,
     PageNotFoundComponent,
@@ -42,9 +42,12 @@ import { ServicesPageComponent } from './services-page/services-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
