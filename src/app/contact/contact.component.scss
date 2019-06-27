@@ -136,6 +136,8 @@
         @media screen and (max-width: $mediumBreakpoint) {
             grid-column: 2 / 3;
             padding-top: 50px;
+            padding-left: 0;
+            padding-right: 0;
         }
 
         @media screen and (min-width: $mediumBreakpoint) {
@@ -163,6 +165,11 @@
         grid-row: 2;
         padding: 0 20px;
 
+        @media screen and (max-width: $mediumBreakpoint) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
 
         form {
             width: 98%;
@@ -172,6 +179,7 @@
             textarea {
                 padding: 5px 10px;
                 outline: none;
+                width: 95%;
             }
 
             input {
@@ -233,6 +241,7 @@
 
             @media screen and (max-width: $mediumBreakpoint) {
                 width: 100%;
+                margin-top: 100px;
             }
 
             @media screen and (min-width: $mediumBreakpoint) {
