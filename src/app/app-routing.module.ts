@@ -16,12 +16,8 @@ const routes: Routes = [
   { path: 'insights', component: InsightsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'policies', component: PoliciesComponent },
-  { path: 'community-projects', component: ComingSoonComponent },
   { path: 'open-source-banking', component: OpenSourceBankingComponent },
-  {
-    path: 'front-end-testing-automation',
-    component: FrontEndAutomationComponent
-  },
+  { path: 'front-end-testing-automation', component: FrontEndAutomationComponent },
   { path: 'about-us', component: AboutUsPageComponent },
   { path: 'services', component: ServicesPageComponent },
   { path: '**', component: PageNotFoundComponent }
